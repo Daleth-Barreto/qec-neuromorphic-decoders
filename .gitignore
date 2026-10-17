@@ -1,0 +1,11 @@
+# ICEIC 2027 submission artifacts - kept local only (avoid public leak pre/post venue)
+ICEIC2027_QEC.pdf
+ICEIC2027_QEC_source.zip
+paper_iceic_main.tex
+*.pdf
+*.zip
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
