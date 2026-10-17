@@ -1,0 +1,58 @@
+[{"stream_name":"stdout","time":0.70911068,"data":"[    0.0s] pip install (No module named 'stim')\n"}
+,{"stream_name":"stdout","time":4.547529282,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 42.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":6.847595053,"data":"[    6.1s] experiments/ntu_qat.py \u003c- /kaggle/input/datasets/dlthhb/qecbb-data/experiments/ntu_qat.py\n"}
+,{"stream_name":"stdout","time":6.859095261,"data":"[    6.2s] ntu/transformer.py \u003c- /kaggle/input/datasets/dlthhb/qecbb-data/ntu/transformer.py\n"}
+,{"stream_name":"stdout","time":6.868556682,"data":"[    6.2s] ntu/baseline.py \u003c- /kaggle/input/datasets/dlthhb/qecbb-data/ntu/baseline.py\n"}
+,{"stream_name":"stdout","time":6.877436419,"data":"[    6.2s] ntu/README.md \u003c- /kaggle/input/datasets/dlthhb/qecbb-data/ntu/README.md\n"}
+,{"stream_name":"stdout","time":6.877451309,"data":"[    6.2s] === QAT gelu act=gelu w=None a=None sp=None batch=64 ===\n"}
+,{"stream_name":"stderr","time":16.553448876,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":18.937744756,"data":"[5.1s] model ready: replaced 40 Linear, K=12\n"}
+,{"stream_name":"stdout","time":19.323717139,"data":"[5.5s] eval set (3000, 432)\n"}
+,{"stream_name":"stdout","time":81.516731726,"data":"[67.7] baseline (target act/quant, no training) LER=4.3333e-03 act=None\n"}
+,{"stream_name":"stdout","time":829.462390693,"data":"[813.9] step 50 loss=0.0143\n"}
+,{"stream_name":"stderr","time":829.46239063,"data":"/kaggle/working/proj/experiments/ntu_qat.py:301: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\n"}
+,{"stream_name":"stderr","time":829.462476954,"data":"Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n"}
+,{"stream_name":"stderr","time":829.462484544,"data":"  float(loss)), flush=True)\n"}
+,{"stream_name":"stdout","time":896.486108848,"data":"[882.6] step 50 LER=3.8000e-02 mean=0.9934 worst=0.9830 act=None\n"}
+,{"stream_name":"stdout","time":1639.620929373,"data":"[1624.1] step 100 loss=0.0303\n"}
+,{"stream_name":"stdout","time":1706.76571759,"data":"[1692.9] step 100 LER=4.0333e-02 mean=0.9931 worst=0.9817 act=None\n"}
+,{"stream_name":"stdout","time":2449.79176643,"data":"[2434.3] step 150 loss=0.0068\n"}
+,{"stream_name":"stdout","time":2516.955910335,"data":"[2503.1] step 150 LER=1.9333e-02 mean=0.9959 worst=0.9927 act=None\n"}
+,{"stream_name":"stdout","time":3259.991843637,"data":"[3244.5] step 200 loss=0.0206\n"}
+,{"stream_name":"stdout","time":3327.126341161,"data":"[3313.3] step 200 LER=3.9333e-02 mean=0.9947 worst=0.9720 act=None\n"}
+,{"stream_name":"stdout","time":4070.111319693,"data":"[4054.6] step 250 loss=0.0124\n"}
+,{"stream_name":"stdout","time":4137.183963673,"data":"[4123.3] step 250 LER=3.8667e-02 mean=0.9933 worst=0.9740 act=None\n"}
+,{"stream_name":"stdout","time":4880.117612782,"data":"[4864.6] step 300 loss=0.0100\n"}
+,{"stream_name":"stdout","time":4947.250808451,"data":"[4933.4] step 300 LER=4.6667e-02 mean=0.9922 worst=0.9717 act=None\n"}
+,{"stream_name":"stdout","time":4947.251524904,"data":"-\u003e /kaggle/working/ntu_qat_gelu.json\n"}
+,{"stream_name":"stdout","time":4950.816916012,"data":"[ 4950.1s] gelu batch=64 rc=0 file_out=True\n"}
+,{"stream_name":"stdout","time":4950.816976486,"data":"[ 4950.1s] === QAT gelu_w4a8 act=gelu w=4 a=8 sp=None batch=64 ===\n"}
+,{"stream_name":"stderr","time":4954.171156755,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":4954.781855015,"data":"[2.2s] model ready: replaced 40 Linear, K=12\n"}
+,{"stream_name":"stdout","time":4955.149711971,"data":"[2.6s] eval set (3000, 432)\n"}
+,{"stream_name":"stdout","time":5025.582571183,"data":"[73.0] baseline (target act/quant, no training) LER=7.3333e-03 act=None\n"}
+,{"stream_name":"stderr","time":5773.799870876,"data":"/kaggle/working/proj/experiments/ntu_qat.py:301: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\n"}
+,{"stream_name":"stderr","time":5773.799919299,"data":"Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n"}
+,{"stream_name":"stderr","time":5773.79992353,"data":"  float(loss)), flush=True)\n"}
+,{"stream_name":"stdout","time":5773.799941187,"data":"[819.6] step 50 loss=0.0511\n"}
+,{"stream_name":"stdout","time":5843.457357861,"data":"[890.9] step 50 LER=2.6000e-02 mean=0.9953 worst=0.9887 act=None\n"}
+,{"stream_name":"stdout","time":6590.512898532,"data":"[1636.3] step 100 loss=0.0155\n"}
+,{"stream_name":"stdout","time":6660.194966755,"data":"[1707.6] step 100 LER=2.3000e-02 mean=0.9948 worst=0.9893 act=None\n"}
+,{"stream_name":"stdout","time":7407.241634179,"data":"[2453.0] step 150 loss=0.0233\n"}
+,{"stream_name":"stdout","time":7476.931321599,"data":"[2524.4] step 150 LER=2.8333e-02 mean=0.9935 worst=0.9853 act=None\n"}
+,{"stream_name":"stdout","time":8223.97175478,"data":"[3269.8] step 200 loss=0.0492\n"}
+,{"stream_name":"stdout","time":8293.661804945,"data":"[3341.1] step 200 LER=2.7333e-02 mean=0.9946 worst=0.9877 act=None\n"}
+,{"stream_name":"stdout","time":9040.765468509,"data":"[4086.6] step 250 loss=0.0329\n"}
+,{"stream_name":"stdout","time":9110.449431299,"data":"[4157.9] step 250 LER=5.8667e-02 mean=0.9905 worst=0.9693 act=None\n"}
+,{"stream_name":"stdout","time":9857.506517505,"data":"[4903.3] step 300 loss=0.0001\n"}
+,{"stream_name":"stdout","time":9927.196314094,"data":"[4974.6] step 300 LER=2.3667e-02 mean=0.9950 worst=0.9903 act=None\n"}
+,{"stream_name":"stdout","time":9927.197319794,"data":"-\u003e /kaggle/working/ntu_qat_gelu_w4a8.json\n"}
+,{"stream_name":"stdout","time":9928.070849854,"data":"[ 9927.4s] gelu_w4a8 batch=64 rc=0 file_out=True\n"}
+,{"stream_name":"stdout","time":9928.070882417,"data":"[ 9927.4s] FIN total=165.5min\n"}
+,{"stream_name":"stderr","time":9930.234569905,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":9930.234596,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":9930.512600437,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":9930.512624689,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":9931.32399239,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":9932.330577792,"data":"[NbConvertApp] Writing 293110 bytes to __results__.html\n"}
+]

@@ -1,0 +1,70 @@
+{
+  "generated_utc": "2026-10-14T08:22:15.148730+00:00",
+  "config": {
+    "t0": false,
+    "t1": false,
+    "t2": true,
+    "all": false,
+    "variant": "correlated",
+    "p": 0.003,
+    "seed": 0,
+    "t1_steps": 200,
+    "t1_samples": 64,
+    "t2_train_steps": 150,
+    "t2_train_samples": 8192,
+    "t2_eval_shots": 1500,
+    "t2_ref_shots": 600,
+    "num_steps": 8,
+    "hidden": 32,
+    "num_layers": 2
+  },
+  "t0": {
+    "uncorrelated": {
+      "n_detectors": 252,
+      "n_observables": 12,
+      "n_checks": 36,
+      "T_slices": 7
+    },
+    "correlated": {
+      "n_detectors": 432,
+      "n_observables": 12,
+      "n_checks": 72,
+      "T_slices": 7
+    }
+  },
+  "t1": {
+    "uncorrelated": {
+      "ler": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.056626022971156334,
+      "k_fail": 0,
+      "n": 64,
+      "steps": 200,
+      "n_train": 64,
+      "seconds": 109.67616033554077,
+      "pass": true
+    }
+  },
+  "t2": {
+    "correlated": {
+      "roundtrip_ok": true,
+      "bposd": {
+        "ler": 0.08,
+        "ci_lo": 0.0608688484413151,
+        "ci_hi": 0.10447517555438182,
+        "shots": 600,
+        "seconds": 692.4183938503265
+      },
+      "snn": {
+        "ler": 0.98,
+        "ci_lo": 0.9715924513875663,
+        "ci_hi": 0.9859552052273325,
+        "k_fail": 1470,
+        "n": 1500,
+        "train_ler": 0.97509765625
+      },
+      "ratio_snn_over_bposd": 12.25,
+      "pass": true
+    }
+  }
+}

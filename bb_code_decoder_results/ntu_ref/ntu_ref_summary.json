@@ -1,0 +1,66 @@
+{
+  "source": "dalethhernandez/qecbb-t4-ntu-ref (T4, bb/bb72_transformer.pt)",
+  "model": "AlphaQubitV2_BB (Blue et al. 2026), 35.98M params, step 10500",
+  "circuit": "BB72 fiel use_both/correlated, rounds=6, 432 det, 12 logicals",
+  "metric": "block LER (K=12), 5000 shots/p",
+  "transformer": [
+    {
+      "p": 0.001,
+      "n": 5000,
+      "errors": 1,
+      "ler": 0.0002,
+      "ler_lo": 3.5304875272480036e-05,
+      "ler_hi": 0.0011321181702531819,
+      "per_log_mean": 0.99998337,
+      "per_log_worst": 0.99979997
+    },
+    {
+      "p": 0.002,
+      "n": 5000,
+      "errors": 5,
+      "ler": 0.001,
+      "ler_lo": 0.00042720718893578876,
+      "ler_hi": 0.0023389874883697442,
+      "per_log_mean": 0.99954998,
+      "per_log_worst": 0.99919999
+    },
+    {
+      "p": 0.003,
+      "n": 5000,
+      "errors": 29,
+      "ler": 0.0058,
+      "ler_lo": 0.004041431411009417,
+      "ler_hi": 0.00831739305697534,
+      "per_log_mean": 0.99824995,
+      "per_log_worst": 0.99699998
+    },
+    {
+      "p": 0.004,
+      "n": 5000,
+      "errors": 115,
+      "ler": 0.023,
+      "ler_lo": 0.019196582389584424,
+      "ler_hi": 0.027535832161667564,
+      "per_log_mean": 0.99264997,
+      "per_log_worst": 0.98899996
+    },
+    {
+      "p": 0.005,
+      "n": 5000,
+      "errors": 410,
+      "ler": 0.082,
+      "ler_lo": 0.0747120586011437,
+      "ler_hi": 0.08992976379387375,
+      "per_log_mean": 0.97254997,
+      "per_log_worst": 0.96199995
+    }
+  ],
+  "bposd_corr_p0.003": 0.0787,
+  "bposd_uncorr": {
+    "0.001": 0.0002,
+    "0.002": 0.0035,
+    "0.003": 0.0124,
+    "0.004": 0.0385,
+    "0.005": 0.0898
+  }
+}

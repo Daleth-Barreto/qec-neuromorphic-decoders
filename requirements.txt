@@ -1,0 +1,35 @@
+# Reproducible environment for the ICEIC 2027 BB/QLDPC decoder compression study.
+# Versions pinned from the environment that produced the reported results
+# (conda env `qecbb`, Python 3.10).
+#
+# NOTE ON TORCH: the reported runs used the CPU build `torch==2.14.1+cpu`.
+# For a CUDA/GPU install, install torch first from the appropriate index, e.g.:
+#   pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cu121
+# then install the rest of this file.
+
+torch==2.14.1
+torch-geometric==2.8.0.post1
+
+# --- Core numerics / data ---
+numpy==2.2.6
+pandas==2.3.3
+scikit-learn==1.7.2
+networkx==3.4.2
+matplotlib==3.10.9
+
+# --- QEC / decoding (required by src/qecbb and third_party/ntu) ---
+stim==1.16.0            # detector/circuit sampling (src/qecbb/stim_*.py) -- was missing
+ldpc==2.4.1
+bposd==2.1
+
+# --- Checkpoint download (NTU transformer from Hugging Face) ---
+huggingface_hub==2.2.0  # hf_hub_download in experiments/ntu_qat.py, ntu_neuro.py -- was missing
+
+# --- Optional: hardware / FPGA export path (Amaranth) ---
+amaranth==0.5.10
+amaranth-yosys==0.50.0.0.post129
+yowasp-yosys==0.44.0
+yowasp-nextpnr-ice40==0.3.1
+
+# --- Optional: notebooks ---
+ipykernel==6.25.0

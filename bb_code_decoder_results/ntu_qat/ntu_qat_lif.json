@@ -1,0 +1,63 @@
+{
+  "p": 0.003,
+  "eval_p": 0.003,
+  "shots": 3000,
+  "steps": 300,
+  "w_bits": null,
+  "a_bits": null,
+  "ternary_w": false,
+  "act": "lif",
+  "lif_thr": 0.0,
+  "sparsity_thr": null,
+  "lr": 0.0001,
+  "batch": 32,
+  "baseline_ler": 0.9886666666666667,
+  "baseline_per_log_mean": 0.8423055380893251,
+  "final_ler": 0.041000000000000036,
+  "final_act_fraction": null,
+  "history": [
+    {
+      "step": 50,
+      "ler": 0.04200000000000004,
+      "per_log_mean": 0.9897222171227137,
+      "per_log_worst": 0.981333315372467,
+      "act_fraction": null
+    },
+    {
+      "step": 100,
+      "ler": 0.1196666666666667,
+      "per_log_mean": 0.9854722172021866,
+      "per_log_worst": 0.9283333420753479,
+      "act_fraction": null
+    },
+    {
+      "step": 150,
+      "ler": 0.039000000000000035,
+      "per_log_mean": 0.9928055504957835,
+      "per_log_worst": 0.9816666841506958,
+      "act_fraction": null
+    },
+    {
+      "step": 200,
+      "ler": 0.05900000000000005,
+      "per_log_mean": 0.9907499849796295,
+      "per_log_worst": 0.9676666855812073,
+      "act_fraction": null
+    },
+    {
+      "step": 250,
+      "ler": 0.07933333333333337,
+      "per_log_mean": 0.9836666584014893,
+      "per_log_worst": 0.9476666450500488,
+      "act_fraction": null
+    },
+    {
+      "step": 300,
+      "ler": 0.041000000000000036,
+      "per_log_mean": 0.9919444372256597,
+      "per_log_worst": 0.9800000190734863,
+      "act_fraction": null
+    }
+  ],
+  "note": "C1 QAT/STE fine-tune of pretrained BB transformer; faithful BB72"
+}

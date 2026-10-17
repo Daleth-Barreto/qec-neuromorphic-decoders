@@ -1,0 +1,45 @@
+Warning: No PCF file specified; IO pins will be placed automatically
+
+Info: Packing constants..
+Info: Packing IOs..
+Info: Packing LUT-FFs..
+Info:      109 LCs used as LUT4 only
+Info:      122 LCs used as LUT4 and DFF
+Info: Packing non-LUT FFs..
+Info:       22 LCs used as DFF only
+Info: Packing carries..
+Info:        3 LCs used as CARRY only
+Info: Packing indirect carry+LUT pairs...
+Info:        1 LUTs merged into carry LCs
+Info: Packing RAMs..
+Info: Placing PLLs..
+Info: Packing special functions..
+Info: Packing PLLs..
+Info: Promoting globals..
+Info: promoting clk$SB_IO_IN (fanout 144)
+Info: promoting rst$SB_IO_IN [reset] (fanout 144)
+Info: promoting $PACKER_GND_NET (fanout 6)
+Info: Constraining chains...
+Info:       10 LCs used to legalise carry chains.
+Info: Checksum: 0xad0069db
+
+Info: Device utilisation:
+Info: 	         ICESTORM_LC:     273/   5280     5%
+Info: 	        ICESTORM_RAM:       0/     30     0%
+Info: 	               SB_IO:      46/     39   117%
+Info: 	               SB_GB:       3/      8    37%
+Info: 	        ICESTORM_PLL:       0/      1     0%
+Info: 	         SB_WARMBOOT:       0/      1     0%
+Info: 	        ICESTORM_DSP:       6/      8    75%
+Info: 	      ICESTORM_HFOSC:       0/      1     0%
+Info: 	      ICESTORM_LFOSC:       0/      1     0%
+Info: 	              SB_I2C:       0/      2     0%
+Info: 	              SB_SPI:       0/      2     0%
+Info: 	              IO_I3C:       0/      2     0%
+Info: 	         SB_LEDDA_IP:       0/      1     0%
+Info: 	         SB_RGBA_DRV:       0/      1     0%
+Info: 	      ICESTORM_SPRAM:       0/      4     0%
+
+Info: Placed 0 cells based on constraints.
+ERROR: Unable to find a placement location for cell 'clk$sb_io'
+1 warning, 1 error

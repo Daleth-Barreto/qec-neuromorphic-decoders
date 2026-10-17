@@ -1,0 +1,108 @@
+{
+  "generated_utc": "2026-10-14T08:41:44.528840+00:00",
+  "device": "cpu",
+  "variant": "correlated",
+  "n_checks": 72,
+  "n_params": 10700,
+  "config": {
+    "variant": "correlated",
+    "p_train": 0.003,
+    "p_train_min": null,
+    "p_train_max": null,
+    "p_eval": null,
+    "n_train": 512,
+    "n_eval": 256,
+    "steps": 60,
+    "batch_size": 64,
+    "eval_batch_size": 256,
+    "lr": 0.002,
+    "weight_decay": 0.0001,
+    "pos_weight": 1.0,
+    "hidden": 32,
+    "num_layers": 2,
+    "num_steps": 8,
+    "beta": 0.9,
+    "spiking": true,
+    "eval_every": 20,
+    "ckpt_every": 20,
+    "log_every": 5,
+    "early_stop_patience": 0,
+    "max_wall_minutes": 0.0,
+    "target_metric": "mean_ler",
+    "resume": null,
+    "seed": 42,
+    "device": "auto",
+    "ref_shots": 200,
+    "ref_osd_order": 3,
+    "smoke": true,
+    "out": "C:\\Proyectos\\QEC_PAPERS\\GAT_LIF_BBCodeDecoder_NUEVA\\bb_code_decoder_results\\snn_circuit"
+  },
+  "p_evals": [
+    0.003
+  ],
+  "p_train_grid": [
+    0.003
+  ],
+  "ref": {
+    "0.003": {
+      "ler": 0.105,
+      "shots": 200,
+      "osd_order": 3
+    }
+  },
+  "best_metric": 0.98828125,
+  "target_metric": "mean_ler",
+  "stopped_reason": null,
+  "final_step": 60,
+  "elapsed_min": 0.47014880577723184,
+  "history": [
+    {
+      "step": 20,
+      "elapsed_s": 9.429097652435303,
+      "metrics": {
+        "0.003": {
+          "ler": 1.0,
+          "ci_lo": 0.9852156082782743,
+          "ci_hi": 1.0,
+          "k_fail": 256,
+          "n": 256,
+          "ref_ler": 0.105,
+          "ratio_snn_over_ref": 9.523809523809524
+        }
+      },
+      "target": 1.0
+    },
+    {
+      "step": 40,
+      "elapsed_s": 18.80995464324951,
+      "metrics": {
+        "0.003": {
+          "ler": 0.98828125,
+          "ci_lo": 0.9661178322810585,
+          "ci_hi": 0.9960067851781936,
+          "k_fail": 253,
+          "n": 256,
+          "ref_ler": 0.105,
+          "ratio_snn_over_ref": 9.412202380952381
+        }
+      },
+      "target": 0.98828125
+    },
+    {
+      "step": 60,
+      "elapsed_s": 28.19495940208435,
+      "metrics": {
+        "0.003": {
+          "ler": 0.98828125,
+          "ci_lo": 0.9661178322810585,
+          "ci_hi": 0.9960067851781936,
+          "k_fail": 253,
+          "n": 256,
+          "ref_ler": 0.105,
+          "ratio_snn_over_ref": 9.412202380952381
+        }
+      },
+      "target": 0.98828125
+    }
+  ]
+}

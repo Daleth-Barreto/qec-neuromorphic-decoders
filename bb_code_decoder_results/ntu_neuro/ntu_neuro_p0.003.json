@@ -1,0 +1,171 @@
+{
+  "p": 0.003,
+  "shots": 5000,
+  "source": "ntu_neuro (pretrained transformer)",
+  "note": "fake-quant PTQ + event-driven sparsity proxy; faithful BB72 correlated",
+  "results": [
+    {
+      "name": "fp32",
+      "w_bits": null,
+      "a_bits": null,
+      "ler": 0.005199999999999982,
+      "per_log_mean": 0.9977833131949106,
+      "per_log_worst": 0.9971999526023865
+    },
+    {
+      "name": "w8a16",
+      "w_bits": 8,
+      "ler": 0.00539999999999996,
+      "per_log_mean": 0.9977166404326757,
+      "per_log_worst": 0.9971999526023865
+    },
+    {
+      "name": "w4a16",
+      "w_bits": 4,
+      "ler": 0.005800000000000027,
+      "per_log_mean": 0.9977499693632126,
+      "per_log_worst": 0.996999979019165
+    },
+    {
+      "name": "w2a16",
+      "w_bits": 2,
+      "ler": 0.9972,
+      "per_log_mean": 0.5500166590015093,
+      "per_log_worst": 0.37860000133514404
+    },
+    {
+      "name": "ternary_w",
+      "w_bits": null,
+      "ternary_w": true,
+      "ler": 0.9976,
+      "per_log_mean": 0.5564666539430618,
+      "per_log_worst": 0.44679999351501465
+    },
+    {
+      "name": "w8a8",
+      "w_bits": 8,
+      "a_bits": 8,
+      "ler": 0.005800000000000027,
+      "per_log_mean": 0.9977499743302664,
+      "per_log_worst": 0.9971999526023865
+    },
+    {
+      "name": "w4a8",
+      "w_bits": 4,
+      "a_bits": 8,
+      "ler": 0.006000000000000005,
+      "per_log_mean": 0.9977666437625885,
+      "per_log_worst": 0.996999979019165
+    },
+    {
+      "name": "w4a4",
+      "w_bits": 4,
+      "a_bits": 4,
+      "ler": 0.39380000000000004,
+      "per_log_mean": 0.9554499834775925,
+      "per_log_worst": 0.7906000018119812
+    },
+    {
+      "name": "w2a4",
+      "w_bits": 2,
+      "a_bits": 4,
+      "ler": 0.9972,
+      "per_log_mean": 0.5519499878088633,
+      "per_log_worst": 0.38019999861717224
+    },
+    {
+      "name": "ternary_w_a4",
+      "w_bits": null,
+      "ternary_w": true,
+      "a_bits": 4,
+      "ler": 0.9932,
+      "per_log_mean": 0.5713666528463364,
+      "per_log_worst": 0.47439998388290405
+    },
+    {
+      "name": "sparse_a_thr0.05",
+      "sparsity_thr": 0.05,
+      "ler": 0.005199999999999982,
+      "per_log_mean": 0.9978499611218771,
+      "per_log_worst": 0.9971999526023865,
+      "thr": 0.05,
+      "act_fraction": 0.8008551113847373,
+      "near_zero_fraction": 0.19914488436933878
+    },
+    {
+      "name": "sparse_a_thr0.1",
+      "sparsity_thr": 0.1,
+      "ler": 0.00539999999999996,
+      "per_log_mean": 0.9976499726374944,
+      "per_log_worst": 0.9971999526023865,
+      "thr": 0.1,
+      "act_fraction": 0.7191153132512019,
+      "near_zero_fraction": 0.19894552457845596
+    },
+    {
+      "name": "sparse_a_thr0.15",
+      "sparsity_thr": 0.15,
+      "ler": 0.00660000000000005,
+      "per_log_mean": 0.9976166387399038,
+      "per_log_worst": 0.996999979019165,
+      "thr": 0.15,
+      "act_fraction": 0.6256265070308146,
+      "near_zero_fraction": 0.198574590540517
+    },
+    {
+      "name": "sparse_a_thr0.2",
+      "sparsity_thr": 0.2,
+      "ler": 0.09819999999999995,
+      "per_log_mean": 0.9896499762932459,
+      "per_log_worst": 0.9133999943733215,
+      "thr": 0.2,
+      "act_fraction": 0.510705721981257,
+      "near_zero_fraction": 0.19764879649831035
+    },
+    {
+      "name": "sparse_a_thr0.25",
+      "sparsity_thr": 0.25,
+      "ler": 0.36560000000000004,
+      "per_log_mean": 0.9499999731779099,
+      "per_log_worst": 0.8315999507904053,
+      "thr": 0.25,
+      "act_fraction": 0.3544431035853017,
+      "near_zero_fraction": 0.19577912845335144
+    },
+    {
+      "name": "sparse_a_thr0.3",
+      "sparsity_thr": 0.3,
+      "ler": 0.9084,
+      "per_log_mean": 0.7550666431585947,
+      "per_log_worst": 0.4901999831199646,
+      "thr": 0.3,
+      "act_fraction": 0.11916798094342251,
+      "near_zero_fraction": 0.19192434797850474
+    },
+    {
+      "name": "act_relu",
+      "act_relu": true,
+      "ler": 0.943,
+      "per_log_mean": 0.7372166539231936,
+      "per_log_worst": 0.407399982213974
+    },
+    {
+      "name": "act_relu_w8a8",
+      "act_relu": true,
+      "w_bits": 8,
+      "a_bits": 8,
+      "ler": 0.9432,
+      "per_log_mean": 0.736716647942861,
+      "per_log_worst": 0.40939998626708984
+    },
+    {
+      "name": "act_relu_w4a8",
+      "act_relu": true,
+      "w_bits": 4,
+      "a_bits": 8,
+      "ler": 0.9326,
+      "per_log_mean": 0.7286499862869581,
+      "per_log_worst": 0.4845999777317047
+    }
+  ]
+}

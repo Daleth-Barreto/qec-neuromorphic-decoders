@@ -1,0 +1,1635 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69 (git sha1 9f75ca1f9, Release, Clang /workspace/YoWASP/yosys/wasi-sdk-33.0-x86_64-linux/share/cmake/../..//bin/clang++ 22.1.0)
+
+-- Running command `read_verilog qec_bb_decoder.v; synth_ice40 -top QEC_BB_Decoder_Top -json qec_bb.json -dsp' --
+
+1. Executing Verilog-2005 frontend: qec_bb_decoder.v
+Parsing Verilog input from `qec_bb_decoder.v' to AST representation.
+Generating RTLIL representation for module `\QEC_BB_Decoder_Top'.
+Generating RTLIL representation for module `\QEC_BB_Decoder_Top.pe0'.
+Generating RTLIL representation for module `\QEC_BB_Decoder_Top.pe0.lif'.
+Generating RTLIL representation for module `\QEC_BB_Decoder_Top.pe1'.
+Generating RTLIL representation for module `\QEC_BB_Decoder_Top.pe1.lif'.
+Successfully finished Verilog frontend.
+
+2. Executing SYNTH_ICE40 pass.
+
+2.1. Executing Verilog-2005 frontend: /share/ice40/cells_sim.v
+Parsing Verilog input from `/share/ice40/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\SB_IO'.
+Generating RTLIL representation for module `\SB_GB_IO'.
+Generating RTLIL representation for module `\SB_GB'.
+Generating RTLIL representation for module `\SB_LUT4'.
+Generating RTLIL representation for module `\SB_CARRY'.
+Generating RTLIL representation for module `\SB_DFF'.
+Generating RTLIL representation for module `\SB_DFFE'.
+Generating RTLIL representation for module `\SB_DFFSR'.
+Generating RTLIL representation for module `\SB_DFFR'.
+Generating RTLIL representation for module `\SB_DFFSS'.
+Generating RTLIL representation for module `\SB_DFFS'.
+Generating RTLIL representation for module `\SB_DFFESR'.
+Generating RTLIL representation for module `\SB_DFFER'.
+Generating RTLIL representation for module `\SB_DFFESS'.
+Generating RTLIL representation for module `\SB_DFFES'.
+Generating RTLIL representation for module `\SB_DFFN'.
+Generating RTLIL representation for module `\SB_DFFNE'.
+Generating RTLIL representation for module `\SB_DFFNSR'.
+Generating RTLIL representation for module `\SB_DFFNR'.
+Generating RTLIL representation for module `\SB_DFFNSS'.
+Generating RTLIL representation for module `\SB_DFFNS'.
+Generating RTLIL representation for module `\SB_DFFNESR'.
+Generating RTLIL representation for module `\SB_DFFNER'.
+Generating RTLIL representation for module `\SB_DFFNESS'.
+Generating RTLIL representation for module `\SB_DFFNES'.
+Generating RTLIL representation for module `\SB_RAM40_4K'.
+Generating RTLIL representation for module `\SB_RAM40_4KNR'.
+Generating RTLIL representation for module `\SB_RAM40_4KNW'.
+Generating RTLIL representation for module `\SB_RAM40_4KNRNW'.
+Generating RTLIL representation for module `\ICESTORM_LC'.
+Generating RTLIL representation for module `\SB_PLL40_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2F_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_2F_PAD'.
+Generating RTLIL representation for module `\SB_WARMBOOT'.
+Generating RTLIL representation for module `\SB_SPRAM256KA'.
+Generating RTLIL representation for module `\SB_HFOSC'.
+Generating RTLIL representation for module `\SB_LFOSC'.
+Generating RTLIL representation for module `\SB_RGBA_DRV'.
+Generating RTLIL representation for module `\SB_LED_DRV_CUR'.
+Generating RTLIL representation for module `\SB_RGB_DRV'.
+Generating RTLIL representation for module `\SB_I2C'.
+Generating RTLIL representation for module `\SB_SPI'.
+Generating RTLIL representation for module `\SB_LEDDA_IP'.
+Generating RTLIL representation for module `\SB_FILTER_50NS'.
+Generating RTLIL representation for module `\SB_IO_I3C'.
+Generating RTLIL representation for module `\SB_IO_OD'.
+Generating RTLIL representation for module `\SB_MAC16'.
+Generating RTLIL representation for module `\ICESTORM_RAM'.
+Successfully finished Verilog frontend.
+
+2.2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.2.1. Analyzing design hierarchy..
+Top module:  \QEC_BB_Decoder_Top
+Used module:     \QEC_BB_Decoder_Top.pe1
+Used module:         \QEC_BB_Decoder_Top.pe1.lif
+Used module:     \QEC_BB_Decoder_Top.pe0
+Used module:         \QEC_BB_Decoder_Top.pe0.lif
+
+2.2.2. Analyzing design hierarchy..
+Top module:  \QEC_BB_Decoder_Top
+Used module:     \QEC_BB_Decoder_Top.pe1
+Used module:         \QEC_BB_Decoder_Top.pe1.lif
+Used module:     \QEC_BB_Decoder_Top.pe0
+Used module:         \QEC_BB_Decoder_Top.pe0.lif
+Removed 0 unused modules.
+
+2.3. Executing PROC pass (convert processes to netlists).
+
+2.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:639$205'.
+Found and cleaned up 1 empty switch in `\QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:624$200'.
+Found and cleaned up 1 empty switch in `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:557$156'.
+Found and cleaned up 1 empty switch in `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:538$150'.
+Found and cleaned up 1 empty switch in `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:519$144'.
+Found and cleaned up 1 empty switch in `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:504$139'.
+Found and cleaned up 1 empty switch in `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:489$135'.
+Found and cleaned up 1 empty switch in `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:477$134'.
+Found and cleaned up 1 empty switch in `\QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:352$99'.
+Found and cleaned up 1 empty switch in `\QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:337$94'.
+Found and cleaned up 1 empty switch in `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:270$50'.
+Found and cleaned up 1 empty switch in `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:251$44'.
+Found and cleaned up 1 empty switch in `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:232$38'.
+Found and cleaned up 1 empty switch in `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:217$33'.
+Found and cleaned up 1 empty switch in `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:202$29'.
+Found and cleaned up 1 empty switch in `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:190$28'.
+Cleaned up 16 empty switches.
+
+2.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 2 switch rules as full_case in process $proc$qec_bb_decoder.v:639$205 in module QEC_BB_Decoder_Top.pe1.lif.
+Marked 2 switch rules as full_case in process $proc$qec_bb_decoder.v:624$200 in module QEC_BB_Decoder_Top.pe1.lif.
+Marked 4 switch rules as full_case in process $proc$qec_bb_decoder.v:557$156 in module QEC_BB_Decoder_Top.pe1.
+Marked 3 switch rules as full_case in process $proc$qec_bb_decoder.v:538$150 in module QEC_BB_Decoder_Top.pe1.
+Marked 3 switch rules as full_case in process $proc$qec_bb_decoder.v:519$144 in module QEC_BB_Decoder_Top.pe1.
+Marked 3 switch rules as full_case in process $proc$qec_bb_decoder.v:504$139 in module QEC_BB_Decoder_Top.pe1.
+Marked 2 switch rules as full_case in process $proc$qec_bb_decoder.v:489$135 in module QEC_BB_Decoder_Top.pe1.
+Marked 1 switch rules as full_case in process $proc$qec_bb_decoder.v:477$134 in module QEC_BB_Decoder_Top.pe1.
+Marked 2 switch rules as full_case in process $proc$qec_bb_decoder.v:352$99 in module QEC_BB_Decoder_Top.pe0.lif.
+Marked 2 switch rules as full_case in process $proc$qec_bb_decoder.v:337$94 in module QEC_BB_Decoder_Top.pe0.lif.
+Marked 4 switch rules as full_case in process $proc$qec_bb_decoder.v:270$50 in module QEC_BB_Decoder_Top.pe0.
+Marked 3 switch rules as full_case in process $proc$qec_bb_decoder.v:251$44 in module QEC_BB_Decoder_Top.pe0.
+Marked 3 switch rules as full_case in process $proc$qec_bb_decoder.v:232$38 in module QEC_BB_Decoder_Top.pe0.
+Marked 3 switch rules as full_case in process $proc$qec_bb_decoder.v:217$33 in module QEC_BB_Decoder_Top.pe0.
+Marked 2 switch rules as full_case in process $proc$qec_bb_decoder.v:202$29 in module QEC_BB_Decoder_Top.pe0.
+Marked 1 switch rules as full_case in process $proc$qec_bb_decoder.v:190$28 in module QEC_BB_Decoder_Top.pe0.
+Removed a total of 0 dead cases.
+
+2.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 72 assignments to connections.
+
+2.3.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:610$213'.
+  Set init value: \state = 0
+Found init rule in `\QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:608$212'.
+  Set init value: \spike = 1'0
+Found init rule in `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:413$180'.
+  Set init value: \r__addr = 4'0000
+Found init rule in `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:410$179'.
+  Set init value: \input_curr = 0
+Found init rule in `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:402$178'.
+  Set init value: \fsm_state = 2'00
+Found init rule in `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:400$177'.
+  Set init value: \done = 1'0
+Found init rule in `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:397$176'.
+  Set init value: \counter = 4'0000
+Found init rule in `\QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:323$107'.
+  Set init value: \state = 0
+Found init rule in `\QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:321$106'.
+  Set init value: \spike = 1'0
+Found init rule in `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:126$74'.
+  Set init value: \r__addr = 4'0000
+Found init rule in `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:123$73'.
+  Set init value: \input_curr = 0
+Found init rule in `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:115$72'.
+  Set init value: \fsm_state = 2'00
+Found init rule in `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:113$71'.
+  Set init value: \done = 1'0
+Found init rule in `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:110$70'.
+  Set init value: \counter = 4'0000
+
+2.3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~48 debug messages>
+
+2.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:610$213'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:608$212'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:585$210'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:639$205'.
+     1/3: $3\$7[31:0]$209
+     2/3: $2\$7[31:0]$208
+     3/3: $1\$7[31:0]$207
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:624$200'.
+     1/3: $3\$6[0:0]$204
+     2/3: $2\$6[0:0]$203
+     3/3: $1\$6[0:0]$202
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:621$198'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:618$197'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:431$181'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:413$180'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:410$179'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:402$178'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:400$177'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:397$176'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:375$174'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:557$156'.
+     1/4: $4\$14[1:0]$161
+     2/4: $3\$14[1:0]$160
+     3/4: $2\$14[1:0]$159
+     4/4: $1\$14[1:0]$158
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:538$150'.
+     1/4: $4\$13[3:0]$155
+     2/4: $3\$13[3:0]$154
+     3/4: $2\$13[3:0]$153
+     4/4: $1\$13[3:0]$152
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:519$144'.
+     1/4: $4\$12[3:0]$149
+     2/4: $3\$12[3:0]$148
+     3/4: $2\$12[3:0]$147
+     4/4: $1\$12[3:0]$146
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:504$139'.
+     1/3: $3\$11[31:0]$143
+     2/3: $2\$11[31:0]$142
+     3/3: $1\$11[31:0]$141
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:489$135'.
+     1/2: $2\$10[0:0]$138
+     2/2: $1\$10[0:0]$137
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:477$134'.
+     1/1: $1\step[0:0]
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:467$133'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:464$132'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:461$131'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:458$130'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:455$129'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:323$107'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:321$106'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:298$104'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:352$99'.
+     1/3: $3\$7[31:0]$103
+     2/3: $2\$7[31:0]$102
+     3/3: $1\$7[31:0]$101
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:337$94'.
+     1/3: $3\$6[0:0]$98
+     2/3: $2\$6[0:0]$97
+     3/3: $1\$6[0:0]$96
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:334$92'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:331$91'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:144$75'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:126$74'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:123$73'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:115$72'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:113$71'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:110$70'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:88$68'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:270$50'.
+     1/4: $4\$14[1:0]$55
+     2/4: $3\$14[1:0]$54
+     3/4: $2\$14[1:0]$53
+     4/4: $1\$14[1:0]$52
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:251$44'.
+     1/4: $4\$13[3:0]$49
+     2/4: $3\$13[3:0]$48
+     3/4: $2\$13[3:0]$47
+     4/4: $1\$13[3:0]$46
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:232$38'.
+     1/4: $4\$12[3:0]$43
+     2/4: $3\$12[3:0]$42
+     3/4: $2\$12[3:0]$41
+     4/4: $1\$12[3:0]$40
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:217$33'.
+     1/3: $3\$11[31:0]$37
+     2/3: $2\$11[31:0]$36
+     3/3: $1\$11[31:0]$35
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:202$29'.
+     1/2: $2\$10[0:0]$32
+     2/2: $1\$10[0:0]$31
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:190$28'.
+     1/1: $1\step[0:0]
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:180$27'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:177$26'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:174$25'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:171$24'.
+Creating decoders for process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:168$23'.
+
+2.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.lif.\$auto$verilog_backend.cc:2355:dump_module$4' from process `\QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:585$210'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.lif.\$7' from process `\QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:639$205'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.lif.\$6' from process `\QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:624$200'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.$memwr$\weights_mem$qec_bb_decoder.v:432$108_EN' from process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:431$181'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.$memwr$\weights_mem$qec_bb_decoder.v:433$109_EN' from process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:431$181'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.$memwr$\weights_mem$qec_bb_decoder.v:434$110_EN' from process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:431$181'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.$memwr$\weights_mem$qec_bb_decoder.v:435$111_EN' from process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:431$181'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.$memwr$\weights_mem$qec_bb_decoder.v:436$112_EN' from process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:431$181'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.$memwr$\weights_mem$qec_bb_decoder.v:437$113_EN' from process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:431$181'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.$memwr$\weights_mem$qec_bb_decoder.v:438$114_EN' from process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:431$181'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.$memwr$\weights_mem$qec_bb_decoder.v:439$115_EN' from process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:431$181'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.$memwr$\weights_mem$qec_bb_decoder.v:440$116_EN' from process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:431$181'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.$memwr$\weights_mem$qec_bb_decoder.v:441$117_EN' from process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:431$181'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.$memwr$\weights_mem$qec_bb_decoder.v:442$118_EN' from process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:431$181'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.$memwr$\weights_mem$qec_bb_decoder.v:443$119_EN' from process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:431$181'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.\$auto$verilog_backend.cc:2355:dump_module$3' from process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:375$174'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.\$14' from process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:557$156'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.\$13' from process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:538$150'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.\$12' from process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:519$144'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.\$11' from process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:504$139'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.\$10' from process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:489$135'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe1.\step' from process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:477$134'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.lif.\$auto$verilog_backend.cc:2355:dump_module$2' from process `\QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:298$104'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.lif.\$7' from process `\QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:352$99'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.lif.\$6' from process `\QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:337$94'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.$memwr$\weights_mem$qec_bb_decoder.v:145$2_EN' from process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:144$75'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.$memwr$\weights_mem$qec_bb_decoder.v:146$3_EN' from process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:144$75'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.$memwr$\weights_mem$qec_bb_decoder.v:147$4_EN' from process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:144$75'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.$memwr$\weights_mem$qec_bb_decoder.v:148$5_EN' from process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:144$75'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.$memwr$\weights_mem$qec_bb_decoder.v:149$6_EN' from process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:144$75'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.$memwr$\weights_mem$qec_bb_decoder.v:150$7_EN' from process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:144$75'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.$memwr$\weights_mem$qec_bb_decoder.v:151$8_EN' from process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:144$75'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.$memwr$\weights_mem$qec_bb_decoder.v:152$9_EN' from process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:144$75'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.$memwr$\weights_mem$qec_bb_decoder.v:153$10_EN' from process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:144$75'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.$memwr$\weights_mem$qec_bb_decoder.v:154$11_EN' from process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:144$75'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.$memwr$\weights_mem$qec_bb_decoder.v:155$12_EN' from process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:144$75'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.$memwr$\weights_mem$qec_bb_decoder.v:156$13_EN' from process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:144$75'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.\$auto$verilog_backend.cc:2355:dump_module$1' from process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:88$68'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.\$14' from process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:270$50'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.\$13' from process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:251$44'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.\$12' from process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:232$38'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.\$11' from process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:217$33'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.\$10' from process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:202$29'.
+No latch inferred for signal `\QEC_BB_Decoder_Top.pe0.\step' from process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:190$28'.
+
+2.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\QEC_BB_Decoder_Top.pe1.lif.\state' using process `\QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:621$198'.
+  created $dff cell `$procdff$816' with positive edge clock.
+Creating register for signal `\QEC_BB_Decoder_Top.pe1.lif.\spike' using process `\QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:618$197'.
+  created $dff cell `$procdff$817' with positive edge clock.
+Creating register for signal `\QEC_BB_Decoder_Top.pe1.\fsm_state' using process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:467$133'.
+  created $dff cell `$procdff$818' with positive edge clock.
+Creating register for signal `\QEC_BB_Decoder_Top.pe1.\r__addr' using process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:464$132'.
+  created $dff cell `$procdff$819' with positive edge clock.
+Creating register for signal `\QEC_BB_Decoder_Top.pe1.\counter' using process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:461$131'.
+  created $dff cell `$procdff$820' with positive edge clock.
+Creating register for signal `\QEC_BB_Decoder_Top.pe1.\input_curr' using process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:458$130'.
+  created $dff cell `$procdff$821' with positive edge clock.
+Creating register for signal `\QEC_BB_Decoder_Top.pe1.\done' using process `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:455$129'.
+  created $dff cell `$procdff$822' with positive edge clock.
+Creating register for signal `\QEC_BB_Decoder_Top.pe0.lif.\state' using process `\QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:334$92'.
+  created $dff cell `$procdff$823' with positive edge clock.
+Creating register for signal `\QEC_BB_Decoder_Top.pe0.lif.\spike' using process `\QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:331$91'.
+  created $dff cell `$procdff$824' with positive edge clock.
+Creating register for signal `\QEC_BB_Decoder_Top.pe0.\fsm_state' using process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:180$27'.
+  created $dff cell `$procdff$825' with positive edge clock.
+Creating register for signal `\QEC_BB_Decoder_Top.pe0.\r__addr' using process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:177$26'.
+  created $dff cell `$procdff$826' with positive edge clock.
+Creating register for signal `\QEC_BB_Decoder_Top.pe0.\counter' using process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:174$25'.
+  created $dff cell `$procdff$827' with positive edge clock.
+Creating register for signal `\QEC_BB_Decoder_Top.pe0.\input_curr' using process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:171$24'.
+  created $dff cell `$procdff$828' with positive edge clock.
+Creating register for signal `\QEC_BB_Decoder_Top.pe0.\done' using process `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:168$23'.
+  created $dff cell `$procdff$829' with positive edge clock.
+
+2.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:610$213'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:608$212'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:585$210'.
+Found and cleaned up 3 empty switches in `\QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:639$205'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:639$205'.
+Found and cleaned up 3 empty switches in `\QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:624$200'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:624$200'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:621$198'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.lif.$proc$qec_bb_decoder.v:618$197'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:431$181'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:413$180'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:410$179'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:402$178'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:400$177'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:397$176'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:375$174'.
+Found and cleaned up 4 empty switches in `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:557$156'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:557$156'.
+Found and cleaned up 4 empty switches in `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:538$150'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:538$150'.
+Found and cleaned up 4 empty switches in `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:519$144'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:519$144'.
+Found and cleaned up 3 empty switches in `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:504$139'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:504$139'.
+Found and cleaned up 2 empty switches in `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:489$135'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:489$135'.
+Found and cleaned up 1 empty switch in `\QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:477$134'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:477$134'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:467$133'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:464$132'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:461$131'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:458$130'.
+Removing empty process `QEC_BB_Decoder_Top.pe1.$proc$qec_bb_decoder.v:455$129'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:323$107'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:321$106'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:298$104'.
+Found and cleaned up 3 empty switches in `\QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:352$99'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:352$99'.
+Found and cleaned up 3 empty switches in `\QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:337$94'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:337$94'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:334$92'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.lif.$proc$qec_bb_decoder.v:331$91'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:144$75'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:126$74'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:123$73'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:115$72'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:113$71'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:110$70'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:88$68'.
+Found and cleaned up 4 empty switches in `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:270$50'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:270$50'.
+Found and cleaned up 4 empty switches in `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:251$44'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:251$44'.
+Found and cleaned up 4 empty switches in `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:232$38'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:232$38'.
+Found and cleaned up 3 empty switches in `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:217$33'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:217$33'.
+Found and cleaned up 2 empty switches in `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:202$29'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:202$29'.
+Found and cleaned up 1 empty switch in `\QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:190$28'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:190$28'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:180$27'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:177$26'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:174$25'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:171$24'.
+Removing empty process `QEC_BB_Decoder_Top.pe0.$proc$qec_bb_decoder.v:168$23'.
+Cleaned up 48 empty switches.
+
+2.3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.pe1.lif.
+Optimizing module QEC_BB_Decoder_Top.pe1.
+<suppressed ~9 debug messages>
+Optimizing module QEC_BB_Decoder_Top.pe0.lif.
+Optimizing module QEC_BB_Decoder_Top.pe0.
+<suppressed ~9 debug messages>
+Optimizing module QEC_BB_Decoder_Top.
+
+2.4. Executing CHECK pass (checking for obvious problems).
+Checking module QEC_BB_Decoder_Top.pe1.lif...
+Checking module QEC_BB_Decoder_Top.pe1...
+Checking module QEC_BB_Decoder_Top.pe0.lif...
+Checking module QEC_BB_Decoder_Top.pe0...
+Checking module QEC_BB_Decoder_Top...
+Found and reported 0 problems.
+
+2.5. Executing FLATTEN pass (flatten design).
+Deleting now unused module QEC_BB_Decoder_Top.pe1.lif.
+Deleting now unused module QEC_BB_Decoder_Top.pe1.
+Deleting now unused module QEC_BB_Decoder_Top.pe0.lif.
+Deleting now unused module QEC_BB_Decoder_Top.pe0.
+<suppressed ~4 debug messages>
+
+2.6. Executing TRIBUF pass.
+
+2.7. Executing DEMINOUT pass (demote inout ports to input or output).
+
+2.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+<suppressed ~2 debug messages>
+
+2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+Removed 6 unused cells and 239 unused wires.
+<suppressed ~7 debug messages>
+
+2.10. Executing CHECK pass (checking for obvious problems).
+Checking module QEC_BB_Decoder_Top...
+Found and reported 0 problems.
+
+2.11. Executing OPT pass (performing simple optimizations).
+
+2.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+
+2.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 167 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Computing hashes of 133 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+<suppressed ~102 debug messages>
+Removed a total of 34 cells.
+
+2.11.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \QEC_BB_Decoder_Top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $flatten\pe1.$procmux$668.
+    dead port 2/2 on $mux $flatten\pe1.$procmux$675.
+    dead port 2/2 on $mux $flatten\pe1.$procmux$689.
+    dead port 2/2 on $mux $flatten\pe1.\lif.$procmux$613.
+    dead port 2/2 on $mux $flatten\pe1.\lif.$procmux$601.
+    dead port 2/2 on $mux $flatten\pe0.$procmux$737.
+    dead port 2/2 on $mux $flatten\pe0.$procmux$745.
+    dead port 2/2 on $mux $flatten\pe1.$procmux$626.
+    dead port 2/2 on $mux $flatten\pe0.$procmux$759.
+    dead port 2/2 on $mux $flatten\pe0.$procmux$766.
+    dead port 2/2 on $mux $flatten\pe1.$procmux$634.
+    dead port 2/2 on $mux $flatten\pe0.$procmux$779.
+    dead port 2/2 on $mux $flatten\pe0.$procmux$786.
+    dead port 2/2 on $mux $flatten\pe0.$procmux$800.
+    dead port 2/2 on $mux $flatten\pe1.$procmux$648.
+    dead port 2/2 on $mux $flatten\pe1.$procmux$655.
+    dead port 2/2 on $mux $flatten\pe0.\lif.$procmux$724.
+    dead port 2/2 on $mux $flatten\pe0.\lif.$procmux$712.
+Removed 18 multiplexer ports.
+<suppressed ~82 debug messages>
+
+2.11.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \QEC_BB_Decoder_Top.
+Performed a total of 0 changes.
+
+2.11.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 115 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Removed a total of 0 cells.
+
+2.11.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.11.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+Removed 0 unused cells and 52 unused wires.
+<suppressed ~1 debug messages>
+
+2.11.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+
+2.11.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.11.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \QEC_BB_Decoder_Top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~64 debug messages>
+
+2.11.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \QEC_BB_Decoder_Top.
+Performed a total of 0 changes.
+
+2.11.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 115 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Removed a total of 0 cells.
+
+2.11.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.11.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+
+2.11.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+
+2.11.16. Finished fast OPT passes. (There is nothing left to do.)
+
+2.12. Executing FSM pass (extract and optimize FSM).
+
+2.12.1. Executing FSM_DETECT pass (finding FSMs in design).
+Not marking QEC_BB_Decoder_Top.pe0.fsm_state as FSM state register:
+    Register has an initialization value.
+Not marking QEC_BB_Decoder_Top.pe1.fsm_state as FSM state register:
+    Register has an initialization value.
+
+2.12.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+2.12.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+2.12.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+
+2.12.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+2.12.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+2.12.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+2.12.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+2.13. Executing OPT pass (performing simple optimizations).
+
+2.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+
+2.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 115 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Removed a total of 0 cells.
+
+2.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \QEC_BB_Decoder_Top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~64 debug messages>
+
+2.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \QEC_BB_Decoder_Top.
+Performed a total of 0 changes.
+
+2.13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 115 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Removed a total of 0 cells.
+
+2.13.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $flatten\pe0.\lif.$procdff$823 ($dff) from module QEC_BB_Decoder_Top (D = $flatten\pe0.\lif.$1\$7[31:0]$101, Q = \pe0.lif.state, rval = 0).
+Adding EN signal on $auto$ff.cc:337:slice$834 ($sdff) from module QEC_BB_Decoder_Top (D = $flatten\pe0.\lif.$2\$7[31:0]$102, Q = \pe0.lif.state).
+Adding SRST signal on $flatten\pe0.\lif.$procdff$824 ($dff) from module QEC_BB_Decoder_Top (D = $flatten\pe0.\lif.$1\$6[0:0]$96, Q = \pe0.lif.spike, rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$836 ($sdff) from module QEC_BB_Decoder_Top (D = $flatten\pe0.\lif.$2\$6[0:0]$97, Q = \pe0.lif.spike).
+Adding SRST signal on $flatten\pe0.$procdff$829 ($dff) from module QEC_BB_Decoder_Top (D = $flatten\pe0.$1\$10[0:0]$31, Q = \pe0.done, rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$838 ($sdff) from module QEC_BB_Decoder_Top (D = $flatten\pe0.$1\$10[0:0]$31, Q = \pe0.done).
+Adding SRST signal on $flatten\pe0.$procdff$828 ($dff) from module QEC_BB_Decoder_Top (D = $flatten\pe0.$1\$11[31:0]$35, Q = \pe0.input_curr, rval = 0).
+Adding EN signal on $auto$ff.cc:337:slice$842 ($sdff) from module QEC_BB_Decoder_Top (D = $flatten\pe0.$1\$11[31:0]$35, Q = \pe0.input_curr).
+Adding SRST signal on $flatten\pe0.$procdff$827 ($dff) from module QEC_BB_Decoder_Top (D = $flatten\pe0.$1\$12[3:0]$40, Q = \pe0.counter, rval = 4'0000).
+Adding EN signal on $auto$ff.cc:337:slice$850 ($sdff) from module QEC_BB_Decoder_Top (D = $flatten\pe0.$1\$12[3:0]$40, Q = \pe0.counter).
+Adding SRST signal on $flatten\pe0.$procdff$826 ($dff) from module QEC_BB_Decoder_Top (D = $flatten\pe0.$1\$13[3:0]$46, Q = \pe0.r__addr, rval = 4'0000).
+Adding EN signal on $auto$ff.cc:337:slice$860 ($sdff) from module QEC_BB_Decoder_Top (D = $flatten\pe0.$1\$13[3:0]$46, Q = \pe0.r__addr).
+Adding SRST signal on $flatten\pe0.$procdff$825 ($dff) from module QEC_BB_Decoder_Top (D = $flatten\pe0.$1\$14[1:0]$52, Q = \pe0.fsm_state, rval = 2'00).
+Adding EN signal on $auto$ff.cc:337:slice$870 ($sdff) from module QEC_BB_Decoder_Top (D = $flatten\pe0.$1\$14[1:0]$52, Q = \pe0.fsm_state).
+Adding SRST signal on $flatten\pe1.\lif.$procdff$816 ($dff) from module QEC_BB_Decoder_Top (D = $flatten\pe1.\lif.$1\$7[31:0]$207, Q = \pe1.lif.state, rval = 0).
+Adding EN signal on $auto$ff.cc:337:slice$880 ($sdff) from module QEC_BB_Decoder_Top (D = $flatten\pe1.\lif.$2\$7[31:0]$208, Q = \pe1.lif.state).
+Adding SRST signal on $flatten\pe1.\lif.$procdff$817 ($dff) from module QEC_BB_Decoder_Top (D = $flatten\pe1.\lif.$1\$6[0:0]$202, Q = \pe1.lif.spike, rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$882 ($sdff) from module QEC_BB_Decoder_Top (D = $flatten\pe1.\lif.$2\$6[0:0]$203, Q = \pe1.lif.spike).
+Adding SRST signal on $flatten\pe1.$procdff$822 ($dff) from module QEC_BB_Decoder_Top (D = $flatten\pe1.$1\$10[0:0]$137, Q = \pe1.done, rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$884 ($sdff) from module QEC_BB_Decoder_Top (D = $flatten\pe1.$1\$10[0:0]$137, Q = \pe1.done).
+Adding SRST signal on $flatten\pe1.$procdff$821 ($dff) from module QEC_BB_Decoder_Top (D = $flatten\pe1.$1\$11[31:0]$141, Q = \pe1.input_curr, rval = 0).
+Adding EN signal on $auto$ff.cc:337:slice$888 ($sdff) from module QEC_BB_Decoder_Top (D = $flatten\pe1.$1\$11[31:0]$141, Q = \pe1.input_curr).
+Adding SRST signal on $flatten\pe1.$procdff$820 ($dff) from module QEC_BB_Decoder_Top (D = $flatten\pe1.$1\$12[3:0]$146, Q = \pe1.counter, rval = 4'0000).
+Adding EN signal on $auto$ff.cc:337:slice$896 ($sdff) from module QEC_BB_Decoder_Top (D = $flatten\pe1.$1\$12[3:0]$146, Q = \pe1.counter).
+Adding SRST signal on $flatten\pe1.$procdff$819 ($dff) from module QEC_BB_Decoder_Top (D = $flatten\pe1.$1\$13[3:0]$152, Q = \pe1.r__addr, rval = 4'0000).
+Adding EN signal on $auto$ff.cc:337:slice$906 ($sdff) from module QEC_BB_Decoder_Top (D = $flatten\pe1.$1\$13[3:0]$152, Q = \pe1.r__addr).
+Adding SRST signal on $flatten\pe1.$procdff$818 ($dff) from module QEC_BB_Decoder_Top (D = $flatten\pe1.$1\$14[1:0]$158, Q = \pe1.fsm_state, rval = 2'00).
+Adding EN signal on $auto$ff.cc:337:slice$916 ($sdff) from module QEC_BB_Decoder_Top (D = $flatten\pe1.$1\$14[1:0]$158, Q = \pe1.fsm_state).
+
+2.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+Removed 18 unused cells and 18 unused wires.
+<suppressed ~19 debug messages>
+
+2.13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+<suppressed ~10 debug messages>
+
+2.13.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.13.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \QEC_BB_Decoder_Top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~46 debug messages>
+
+2.13.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \QEC_BB_Decoder_Top.
+Performed a total of 0 changes.
+
+2.13.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 129 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Computing hashes of 110 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Computing hashes of 106 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Computing hashes of 104 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+<suppressed ~75 debug messages>
+Removed a total of 25 cells.
+
+2.13.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.13.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+Removed 0 unused cells and 23 unused wires.
+<suppressed ~1 debug messages>
+
+2.13.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+
+2.13.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.13.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \QEC_BB_Decoder_Top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~44 debug messages>
+
+2.13.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \QEC_BB_Decoder_Top.
+Performed a total of 0 changes.
+
+2.13.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 104 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Removed a total of 0 cells.
+
+2.13.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.13.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+
+2.13.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+
+2.13.23. Finished fast OPT passes. (There is nothing left to do.)
+
+2.14. Executing WREDUCE pass (reducing word size of cells).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe0.$meminit$\weights_mem$qec_bb_decoder.v:145$56 (pe0.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe0.$meminit$\weights_mem$qec_bb_decoder.v:146$57 (pe0.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe0.$meminit$\weights_mem$qec_bb_decoder.v:147$58 (pe0.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe0.$meminit$\weights_mem$qec_bb_decoder.v:148$59 (pe0.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe0.$meminit$\weights_mem$qec_bb_decoder.v:149$60 (pe0.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe0.$meminit$\weights_mem$qec_bb_decoder.v:150$61 (pe0.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe0.$meminit$\weights_mem$qec_bb_decoder.v:151$62 (pe0.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe0.$meminit$\weights_mem$qec_bb_decoder.v:152$63 (pe0.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe0.$meminit$\weights_mem$qec_bb_decoder.v:153$64 (pe0.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe0.$meminit$\weights_mem$qec_bb_decoder.v:154$65 (pe0.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe0.$meminit$\weights_mem$qec_bb_decoder.v:155$66 (pe0.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe0.$meminit$\weights_mem$qec_bb_decoder.v:156$67 (pe0.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe1.$meminit$\weights_mem$qec_bb_decoder.v:435$165 (pe1.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe1.$meminit$\weights_mem$qec_bb_decoder.v:433$163 (pe1.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe1.$meminit$\weights_mem$qec_bb_decoder.v:443$173 (pe1.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe1.$meminit$\weights_mem$qec_bb_decoder.v:436$166 (pe1.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe1.$meminit$\weights_mem$qec_bb_decoder.v:437$167 (pe1.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe1.$meminit$\weights_mem$qec_bb_decoder.v:438$168 (pe1.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe1.$meminit$\weights_mem$qec_bb_decoder.v:441$171 (pe1.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe1.$meminit$\weights_mem$qec_bb_decoder.v:442$172 (pe1.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe1.$meminit$\weights_mem$qec_bb_decoder.v:432$162 (pe1.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe1.$meminit$\weights_mem$qec_bb_decoder.v:439$169 (pe1.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe1.$meminit$\weights_mem$qec_bb_decoder.v:434$164 (pe1.weights_mem).
+Removed top 28 address bits (of 32) from memory init port QEC_BB_Decoder_Top.$flatten\pe1.$meminit$\weights_mem$qec_bb_decoder.v:440$170 (pe1.weights_mem).
+Removed top 1 bits (of 2) from port B of cell QEC_BB_Decoder_Top.$auto$simple.cc:194:make_patterns_logic$923 ($ne).
+Removed top 1 bits (of 2) from port B of cell QEC_BB_Decoder_Top.$auto$simple.cc:194:make_patterns_logic$877 ($ne).
+Removed top 22 bits (of 32) from port B of cell QEC_BB_Decoder_Top.$flatten\pe0.\lif.$gt$qec_bb_decoder.v:328$89 ($gt).
+Converting cell QEC_BB_Decoder_Top.$flatten\pe0.\lif.$sub$qec_bb_decoder.v:329$90 ($sub) from unsigned to signed.
+Removed top 1 bits (of 33) from port A of cell QEC_BB_Decoder_Top.$flatten\pe0.\lif.$sub$qec_bb_decoder.v:329$90 ($sub).
+Removed top 23 bits (of 33) from port B of cell QEC_BB_Decoder_Top.$flatten\pe0.\lif.$sub$qec_bb_decoder.v:329$90 ($sub).
+Removed top 1 bits (of 33) from port Y of cell QEC_BB_Decoder_Top.$flatten\pe0.\lif.$sub$qec_bb_decoder.v:329$90 ($sub).
+Removed top 8 bits (of 40) from port A of cell QEC_BB_Decoder_Top.$flatten\pe0.\lif.$mul$qec_bb_decoder.v:336$93 ($mul).
+Removed top 31 bits (of 39) from port B of cell QEC_BB_Decoder_Top.$flatten\pe0.\lif.$mul$qec_bb_decoder.v:336$93 ($mul).
+Removed top 1 bits (of 2) from port B of cell QEC_BB_Decoder_Top.$flatten\pe0.$procmux$738_CMP0 ($eq).
+Converting cell QEC_BB_Decoder_Top.$flatten\pe0.\lif.$add$qec_bb_decoder.v:327$88 ($add) from unsigned to signed.
+Removed top 1 bits (of 33) from port A of cell QEC_BB_Decoder_Top.$flatten\pe0.\lif.$add$qec_bb_decoder.v:327$88 ($add).
+Removed top 1 bits (of 33) from port B of cell QEC_BB_Decoder_Top.$flatten\pe0.\lif.$add$qec_bb_decoder.v:327$88 ($add).
+Removed top 1 bits (of 33) from port Y of cell QEC_BB_Decoder_Top.$flatten\pe0.\lif.$add$qec_bb_decoder.v:327$88 ($add).
+Removed top 1 bits (of 5) from port Y of cell QEC_BB_Decoder_Top.$flatten\pe0.$add$qec_bb_decoder.v:165$21 ($add).
+Converting cell QEC_BB_Decoder_Top.$flatten\pe0.$add$qec_bb_decoder.v:163$19 ($add) from unsigned to signed.
+Removed top 1 bits (of 33) from port A of cell QEC_BB_Decoder_Top.$flatten\pe0.$add$qec_bb_decoder.v:163$19 ($add).
+Removed top 9 bits (of 33) from port B of cell QEC_BB_Decoder_Top.$flatten\pe0.$add$qec_bb_decoder.v:163$19 ($add).
+Removed top 1 bits (of 33) from port Y of cell QEC_BB_Decoder_Top.$flatten\pe0.$add$qec_bb_decoder.v:163$19 ($add).
+Converting cell QEC_BB_Decoder_Top.$flatten\pe0.$mul$qec_bb_decoder.v:162$18 ($mul) from unsigned to signed.
+Removed top 16 bits (of 32) from port A of cell QEC_BB_Decoder_Top.$flatten\pe0.$mul$qec_bb_decoder.v:162$18 ($mul).
+Removed top 16 bits (of 32) from port B of cell QEC_BB_Decoder_Top.$flatten\pe0.$mul$qec_bb_decoder.v:162$18 ($mul).
+Removed top 22 bits (of 32) from port B of cell QEC_BB_Decoder_Top.$flatten\pe1.\lif.$gt$qec_bb_decoder.v:615$195 ($gt).
+Converting cell QEC_BB_Decoder_Top.$flatten\pe1.\lif.$sub$qec_bb_decoder.v:616$196 ($sub) from unsigned to signed.
+Removed top 1 bits (of 33) from port A of cell QEC_BB_Decoder_Top.$flatten\pe1.\lif.$sub$qec_bb_decoder.v:616$196 ($sub).
+Removed top 23 bits (of 33) from port B of cell QEC_BB_Decoder_Top.$flatten\pe1.\lif.$sub$qec_bb_decoder.v:616$196 ($sub).
+Removed top 1 bits (of 33) from port Y of cell QEC_BB_Decoder_Top.$flatten\pe1.\lif.$sub$qec_bb_decoder.v:616$196 ($sub).
+Removed top 8 bits (of 40) from port A of cell QEC_BB_Decoder_Top.$flatten\pe1.\lif.$mul$qec_bb_decoder.v:623$199 ($mul).
+Removed top 31 bits (of 39) from port B of cell QEC_BB_Decoder_Top.$flatten\pe1.\lif.$mul$qec_bb_decoder.v:623$199 ($mul).
+Removed top 1 bits (of 2) from port B of cell QEC_BB_Decoder_Top.$flatten\pe1.$procmux$627_CMP0 ($eq).
+Converting cell QEC_BB_Decoder_Top.$flatten\pe1.\lif.$add$qec_bb_decoder.v:614$194 ($add) from unsigned to signed.
+Removed top 1 bits (of 33) from port A of cell QEC_BB_Decoder_Top.$flatten\pe1.\lif.$add$qec_bb_decoder.v:614$194 ($add).
+Removed top 1 bits (of 33) from port B of cell QEC_BB_Decoder_Top.$flatten\pe1.\lif.$add$qec_bb_decoder.v:614$194 ($add).
+Removed top 1 bits (of 33) from port Y of cell QEC_BB_Decoder_Top.$flatten\pe1.\lif.$add$qec_bb_decoder.v:614$194 ($add).
+Removed top 1 bits (of 5) from port Y of cell QEC_BB_Decoder_Top.$flatten\pe1.$add$qec_bb_decoder.v:452$127 ($add).
+Converting cell QEC_BB_Decoder_Top.$flatten\pe1.$add$qec_bb_decoder.v:450$125 ($add) from unsigned to signed.
+Removed top 1 bits (of 33) from port A of cell QEC_BB_Decoder_Top.$flatten\pe1.$add$qec_bb_decoder.v:450$125 ($add).
+Removed top 9 bits (of 33) from port B of cell QEC_BB_Decoder_Top.$flatten\pe1.$add$qec_bb_decoder.v:450$125 ($add).
+Removed top 1 bits (of 33) from port Y of cell QEC_BB_Decoder_Top.$flatten\pe1.$add$qec_bb_decoder.v:450$125 ($add).
+Converting cell QEC_BB_Decoder_Top.$flatten\pe1.$mul$qec_bb_decoder.v:449$124 ($mul) from unsigned to signed.
+Removed top 16 bits (of 32) from port A of cell QEC_BB_Decoder_Top.$flatten\pe1.$mul$qec_bb_decoder.v:449$124 ($mul).
+Removed top 16 bits (of 32) from port B of cell QEC_BB_Decoder_Top.$flatten\pe1.$mul$qec_bb_decoder.v:449$124 ($mul).
+
+2.15. Executing PEEPOPT pass (run peephole optimizers).
+
+2.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+2.17. Executing SHARE pass (SAT-based resource sharing).
+Found 4 cells in module QEC_BB_Decoder_Top that may be considered for resource sharing.
+  Analyzing resource sharing options for $flatten\pe0.$memrd$\weights_mem$qec_bb_decoder.v:158$14 ($memrd):
+    Found 1 activation_patterns using ctrl signal $flatten\pe0.$procmux$738_CMP.
+    No candidates found.
+  Analyzing resource sharing options for $flatten\pe1.$memrd$\weights_mem$qec_bb_decoder.v:445$120 ($memrd):
+    Found 1 activation_patterns using ctrl signal $flatten\pe1.$procmux$627_CMP.
+    No candidates found.
+  Analyzing resource sharing options for $flatten\pe0.$mul$qec_bb_decoder.v:162$18 ($mul):
+    Found 1 activation_patterns using ctrl signal $flatten\pe0.$procmux$738_CMP.
+    Found 1 candidates: $flatten\pe1.$mul$qec_bb_decoder.v:449$124
+    Analyzing resource sharing with $flatten\pe1.$mul$qec_bb_decoder.v:449$124 ($mul):
+      Found 1 activation_patterns using ctrl signal $flatten\pe1.$procmux$627_CMP.
+      Activation pattern for cell $flatten\pe0.$mul$qec_bb_decoder.v:162$18: $flatten\pe0.$procmux$738_CMP = 1'1
+      Activation pattern for cell $flatten\pe1.$mul$qec_bb_decoder.v:449$124: $flatten\pe1.$procmux$627_CMP = 1'1
+      Size of SAT problem: 2 cells, 32 variables, 77 clauses
+      According to the SAT solver this pair of cells can not be shared.
+      Model from SAT solver: { $flatten\pe1.$procmux$627_CMP $flatten\pe0.$procmux$738_CMP } = 2'11
+  Analyzing resource sharing options for $flatten\pe1.$mul$qec_bb_decoder.v:449$124 ($mul):
+    Found 1 activation_patterns using ctrl signal $flatten\pe1.$procmux$627_CMP.
+    No candidates found.
+
+2.18. Executing TECHMAP pass (map to technology primitives).
+
+2.18.1. Executing Verilog-2005 frontend: /share/cmp2lut.v
+Parsing Verilog input from `/share/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+2.18.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~34 debug messages>
+
+2.19. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+
+2.20. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+
+2.21. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+Checking read port `\pe1.weights_mem'[0] in module `\QEC_BB_Decoder_Top': no output FF found.
+Checking read port `\pe0.weights_mem'[0] in module `\QEC_BB_Decoder_Top': no output FF found.
+Checking read port address `\pe1.weights_mem'[0] in module `\QEC_BB_Decoder_Top': address FF has fully-defined init value, not supported.
+Checking read port address `\pe0.weights_mem'[0] in module `\QEC_BB_Decoder_Top': address FF has fully-defined init value, not supported.
+
+2.22. Executing WREDUCE pass (reducing word size of cells).
+
+2.23. Executing TECHMAP pass (map to technology primitives).
+
+2.23.1. Executing Verilog-2005 frontend: /share/mul2dsp.v
+Parsing Verilog input from `/share/mul2dsp.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+2.23.2. Executing Verilog-2005 frontend: /share/ice40/dsp_map.v
+Parsing Verilog input from `/share/ice40/dsp_map.v' to AST representation.
+Generating RTLIL representation for module `$__MUL16X16'.
+Successfully finished Verilog frontend.
+
+2.23.3. Continuing TECHMAP pass.
+Using template $paramod$00bd7eaa7a95c2995d1560a644dd2723ed4cdc9e\_80_mul for cells of type $mul.
+Using template $paramod$98b5abf51e25760e7ff42b5f29b6a0813dd63380\_80_mul for cells of type $mul.
+Using template $paramod$72cc503e316cdfc7b3205a8ad319a7d878f5d300\_80_mul for cells of type $__mul.
+Using template $paramod$205b89f2c662e0c1817b30757a182d6f61fff110\_80_mul for cells of type $__mul.
+Using template $paramod$47854eca91d30af97f481b6f686a93486e1c1fd1$__MUL16X16 for cells of type $__MUL16X16.
+Using template $paramod$fbc9653de8764a04443d7e4c8aad1fcdaa09d24c$__MUL16X16 for cells of type $__MUL16X16.
+Using template $paramod$23fc2f5bdf029f0ab5ca302627a6b9b09e3c4d6f$__MUL16X16 for cells of type $__MUL16X16.
+No more expansions possible.
+<suppressed ~338 debug messages>
+
+2.24. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+<suppressed ~2 debug messages>
+
+2.25. Executing WREDUCE pass (reducing word size of cells).
+Removed top 15 bits (of 23) from port B of cell QEC_BB_Decoder_Top.$techmap$flatten\pe0.\lif.$mul$qec_bb_decoder.v:336$93.$add$/share/mul2dsp.v:175$934 ($add).
+Removed top 15 bits (of 23) from port B of cell QEC_BB_Decoder_Top.$techmap$flatten\pe1.\lif.$mul$qec_bb_decoder.v:623$199.$add$/share/mul2dsp.v:175$934 ($add).
+
+2.26. Executing ICE40_DSP pass (map multipliers).
+Checking QEC_BB_Decoder_Top.$flatten\pe1.\lif.$mul$qec_bb_decoder.v:623$199.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.sliceA.last for iCE40 DSP inference.
+  adder $techmap$flatten\pe1.\lif.$mul$qec_bb_decoder.v:623$199.$add$/share/mul2dsp.v:175$934 ($add)
+Checking QEC_BB_Decoder_Top.$flatten\pe0.\lif.$mul$qec_bb_decoder.v:336$93.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.sliceA[0].mul for iCE40 DSP inference.
+Checking QEC_BB_Decoder_Top.$flatten\pe0.$mul$qec_bb_decoder.v:162$18 for iCE40 DSP inference.
+Checking QEC_BB_Decoder_Top.$flatten\pe0.\lif.$mul$qec_bb_decoder.v:336$93.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.sliceA.last for iCE40 DSP inference.
+  adder $techmap$flatten\pe0.\lif.$mul$qec_bb_decoder.v:336$93.$add$/share/mul2dsp.v:175$934 ($add)
+Checking QEC_BB_Decoder_Top.$flatten\pe1.$mul$qec_bb_decoder.v:449$124 for iCE40 DSP inference.
+Checking QEC_BB_Decoder_Top.$flatten\pe1.\lif.$mul$qec_bb_decoder.v:623$199.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.sliceA[0].mul for iCE40 DSP inference.
+<suppressed ~60 debug messages>
+
+2.27. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module QEC_BB_Decoder_Top:
+  creating $macc model for $flatten\pe1.\lif.$sub$qec_bb_decoder.v:616$196 ($sub).
+  creating $macc model for $flatten\pe1.$add$qec_bb_decoder.v:450$125 ($add).
+  creating $macc model for $flatten\pe0.$add$qec_bb_decoder.v:163$19 ($add).
+  creating $macc model for $flatten\pe0.$add$qec_bb_decoder.v:165$21 ($add).
+  creating $macc model for $flatten\pe0.\lif.$add$qec_bb_decoder.v:327$88 ($add).
+  creating $macc model for $flatten\pe1.$add$qec_bb_decoder.v:452$127 ($add).
+  creating $macc model for $flatten\pe1.\lif.$add$qec_bb_decoder.v:614$194 ($add).
+  creating $macc model for $flatten\pe0.\lif.$sub$qec_bb_decoder.v:329$90 ($sub).
+  creating $alu model for $macc $flatten\pe0.\lif.$sub$qec_bb_decoder.v:329$90.
+  creating $alu model for $macc $flatten\pe1.\lif.$add$qec_bb_decoder.v:614$194.
+  creating $alu model for $macc $flatten\pe1.$add$qec_bb_decoder.v:452$127.
+  creating $alu model for $macc $flatten\pe0.\lif.$add$qec_bb_decoder.v:327$88.
+  creating $alu model for $macc $flatten\pe0.$add$qec_bb_decoder.v:165$21.
+  creating $alu model for $macc $flatten\pe0.$add$qec_bb_decoder.v:163$19.
+  creating $alu model for $macc $flatten\pe1.$add$qec_bb_decoder.v:450$125.
+  creating $alu model for $macc $flatten\pe1.\lif.$sub$qec_bb_decoder.v:616$196.
+  creating $alu model for $flatten\pe1.\lif.$gt$qec_bb_decoder.v:615$195 ($gt): merged with $flatten\pe1.\lif.$sub$qec_bb_decoder.v:616$196.
+  creating $alu model for $flatten\pe0.\lif.$gt$qec_bb_decoder.v:328$89 ($gt): merged with $flatten\pe0.\lif.$sub$qec_bb_decoder.v:329$90.
+  creating $alu cell for $flatten\pe1.\lif.$sub$qec_bb_decoder.v:616$196, $flatten\pe1.\lif.$gt$qec_bb_decoder.v:615$195: $auto$alumacc.cc:548:replace_alu$969
+  creating $alu cell for $flatten\pe1.$add$qec_bb_decoder.v:450$125: $auto$alumacc.cc:548:replace_alu$982
+  creating $alu cell for $flatten\pe0.$add$qec_bb_decoder.v:163$19: $auto$alumacc.cc:548:replace_alu$985
+  creating $alu cell for $flatten\pe0.$add$qec_bb_decoder.v:165$21: $auto$alumacc.cc:548:replace_alu$988
+  creating $alu cell for $flatten\pe0.\lif.$add$qec_bb_decoder.v:327$88: $auto$alumacc.cc:548:replace_alu$991
+  creating $alu cell for $flatten\pe1.$add$qec_bb_decoder.v:452$127: $auto$alumacc.cc:548:replace_alu$994
+  creating $alu cell for $flatten\pe1.\lif.$add$qec_bb_decoder.v:614$194: $auto$alumacc.cc:548:replace_alu$997
+  creating $alu cell for $flatten\pe0.\lif.$sub$qec_bb_decoder.v:329$90, $flatten\pe0.\lif.$gt$qec_bb_decoder.v:328$89: $auto$alumacc.cc:548:replace_alu$1000
+  created 8 $alu and 0 $macc cells.
+
+2.28. Executing OPT pass (performing simple optimizations).
+
+2.28.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+<suppressed ~4 debug messages>
+
+2.28.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 114 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Removed a total of 0 cells.
+
+2.28.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \QEC_BB_Decoder_Top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~44 debug messages>
+
+2.28.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \QEC_BB_Decoder_Top.
+Performed a total of 0 changes.
+
+2.28.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 114 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Removed a total of 0 cells.
+
+2.28.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.28.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+Removed 2 unused cells and 72 unused wires.
+<suppressed ~3 debug messages>
+
+2.28.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+
+2.28.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.28.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \QEC_BB_Decoder_Top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~44 debug messages>
+
+2.28.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \QEC_BB_Decoder_Top.
+Performed a total of 0 changes.
+
+2.28.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 112 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Removed a total of 0 cells.
+
+2.28.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.28.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+
+2.28.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+
+2.28.16. Finished fast OPT passes. (There is nothing left to do.)
+
+2.29. Executing MEMORY pass.
+
+2.29.1. Executing OPT_MEM pass (optimize memories).
+QEC_BB_Decoder_Top.pe1.weights_mem: removing const-0 lane 0
+QEC_BB_Decoder_Top.pe1.weights_mem: removing const-0 lane 1
+QEC_BB_Decoder_Top.pe1.weights_mem: removing const-0 lane 2
+QEC_BB_Decoder_Top.pe1.weights_mem: removing const-0 lane 3
+QEC_BB_Decoder_Top.pe1.weights_mem: removing const-0 lane 4
+QEC_BB_Decoder_Top.pe1.weights_mem: removing const-0 lane 5
+QEC_BB_Decoder_Top.pe1.weights_mem: removing const-0 lane 6
+QEC_BB_Decoder_Top.pe1.weights_mem: removing const-0 lane 7
+QEC_BB_Decoder_Top.pe1.weights_mem: removing const-1 lane 8
+QEC_BB_Decoder_Top.pe1.weights_mem: removing const-0 lane 9
+QEC_BB_Decoder_Top.pe1.weights_mem: removing const-0 lane 10
+QEC_BB_Decoder_Top.pe1.weights_mem: removing const-0 lane 11
+QEC_BB_Decoder_Top.pe1.weights_mem: removing const-0 lane 12
+QEC_BB_Decoder_Top.pe1.weights_mem: removing const-0 lane 13
+QEC_BB_Decoder_Top.pe1.weights_mem: removing const-0 lane 14
+QEC_BB_Decoder_Top.pe1.weights_mem: removing const-0 lane 15
+QEC_BB_Decoder_Top.pe0.weights_mem: removing const-0 lane 0
+QEC_BB_Decoder_Top.pe0.weights_mem: removing const-0 lane 1
+QEC_BB_Decoder_Top.pe0.weights_mem: removing const-0 lane 2
+QEC_BB_Decoder_Top.pe0.weights_mem: removing const-0 lane 3
+QEC_BB_Decoder_Top.pe0.weights_mem: removing const-0 lane 4
+QEC_BB_Decoder_Top.pe0.weights_mem: removing const-0 lane 5
+QEC_BB_Decoder_Top.pe0.weights_mem: removing const-0 lane 6
+QEC_BB_Decoder_Top.pe0.weights_mem: removing const-0 lane 7
+QEC_BB_Decoder_Top.pe0.weights_mem: removing const-1 lane 8
+QEC_BB_Decoder_Top.pe0.weights_mem: removing const-0 lane 9
+QEC_BB_Decoder_Top.pe0.weights_mem: removing const-0 lane 10
+QEC_BB_Decoder_Top.pe0.weights_mem: removing const-0 lane 11
+QEC_BB_Decoder_Top.pe0.weights_mem: removing const-0 lane 12
+QEC_BB_Decoder_Top.pe0.weights_mem: removing const-0 lane 13
+QEC_BB_Decoder_Top.pe0.weights_mem: removing const-0 lane 14
+QEC_BB_Decoder_Top.pe0.weights_mem: removing const-0 lane 15
+Performed a total of 2 transformations.
+
+2.29.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+2.29.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+2.29.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+2.29.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+2.29.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+
+2.29.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+2.29.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+2.29.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+
+2.29.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.30. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+
+2.31. Executing MEMORY_LIBMAP pass (mapping memories to cells).
+
+2.32. Executing TECHMAP pass (map to technology primitives).
+
+2.32.1. Executing Verilog-2005 frontend: /share/ice40/brams_map.v
+Parsing Verilog input from `/share/ice40/brams_map.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_RAM4K_'.
+Successfully finished Verilog frontend.
+
+2.32.2. Executing Verilog-2005 frontend: /share/ice40/spram_map.v
+Parsing Verilog input from `/share/ice40/spram_map.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_SPRAM_'.
+Successfully finished Verilog frontend.
+
+2.32.3. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+2.33. Executing ICE40_BRAMINIT pass.
+
+2.34. Executing OPT pass (performing simple optimizations).
+
+2.34.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+<suppressed ~25 debug messages>
+
+2.34.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 91 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Removed a total of 0 cells.
+
+2.34.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.34.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+Removed 0 unused cells and 27 unused wires.
+<suppressed ~1 debug messages>
+
+2.34.5. Finished fast OPT passes.
+
+2.35. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+2.36. Executing OPT pass (performing simple optimizations).
+
+2.36.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+
+2.36.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 91 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Removed a total of 0 cells.
+
+2.36.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \QEC_BB_Decoder_Top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~20 debug messages>
+
+2.36.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \QEC_BB_Decoder_Top.
+    Consolidated identical input bits for $mux cell $flatten\pe1.\lif.$procmux$599:
+      Old ports: A={ \pe1.lif.$5 [31:8] \pe1.lif.next_v [7:0] }, B=\pe1.lif.next_v, Y=$flatten\pe1.\lif.$2\$7[31:0]$208
+      New ports: A=\pe1.lif.$5 [31:8], B=\pe1.lif.next_v [31:8], Y=$flatten\pe1.\lif.$2\$7[31:0]$208 [31:8]
+      New connections: $flatten\pe1.\lif.$2\$7[31:0]$208 [7:0] = \pe1.lif.next_v [7:0]
+    Consolidated identical input bits for $mux cell $flatten\pe0.\lif.$procmux$710:
+      Old ports: A={ \pe0.lif.$5 [31:8] \pe0.lif.next_v [7:0] }, B=\pe0.lif.next_v, Y=$flatten\pe0.\lif.$2\$7[31:0]$102
+      New ports: A=\pe0.lif.$5 [31:8], B=\pe0.lif.next_v [31:8], Y=$flatten\pe0.\lif.$2\$7[31:0]$102 [31:8]
+      New connections: $flatten\pe0.\lif.$2\$7[31:0]$102 [7:0] = \pe0.lif.next_v [7:0]
+  Optimizing cells in module \QEC_BB_Decoder_Top.
+Performed a total of 2 changes.
+
+2.36.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 91 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Removed a total of 0 cells.
+
+2.36.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.36.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+
+2.36.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+
+2.36.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.36.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \QEC_BB_Decoder_Top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~20 debug messages>
+
+2.36.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \QEC_BB_Decoder_Top.
+Performed a total of 0 changes.
+
+2.36.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 91 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Removed a total of 0 cells.
+
+2.36.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.36.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+
+2.36.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+
+2.36.16. Finished fast OPT passes. (There is nothing left to do.)
+
+2.37. Executing ICE40_WRAPCARRY pass (wrap carries).
+
+2.38. Executing TECHMAP pass (map to technology primitives).
+
+2.38.1. Executing Verilog-2005 frontend: /share/techmap.v
+Parsing Verilog input from `/share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+2.38.2. Executing Verilog-2005 frontend: /share/ice40/arith_map.v
+Parsing Verilog input from `/share/ice40/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_ice40_alu'.
+Successfully finished Verilog frontend.
+
+2.38.3. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod$2653f68ddb8eab7b1907b4a20767b72a824a7a36\_80_ice40_alu for cells of type $alu.
+Using template $paramod$b429cffabeb32207ee0b356f1f47c8ecd0af65f3\_80_ice40_alu for cells of type $alu.
+Using template $paramod$32a7b7b86c07519b7537abc18e96f0331f97914d\_80_ice40_alu for cells of type $alu.
+Using template $paramod$962c02e58f658f52a79d612891094e908a8c053d\_80_ice40_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $ne.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $sdffe.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $pmux.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $pos.
+No more expansions possible.
+<suppressed ~266 debug messages>
+
+2.39. Executing OPT pass (performing simple optimizations).
+
+2.39.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+<suppressed ~408 debug messages>
+
+2.39.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 917 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Computing hashes of 907 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+<suppressed ~30 debug messages>
+Removed a total of 10 cells.
+
+2.39.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.39.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+Removed 258 unused cells and 232 unused wires.
+<suppressed ~259 debug messages>
+
+2.39.5. Finished fast OPT passes.
+
+2.40. Executing ICE40_OPT pass (performing simple optimizations).
+
+2.40.1. Running ICE40 specific optimizations.
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) QEC_BB_Decoder_Top.$auto$alumacc.cc:548:replace_alu$969.slice[0].carry: CO=\pe1.lif.next_v [8]
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) QEC_BB_Decoder_Top.$auto$alumacc.cc:548:replace_alu$988.slice[0].carry: CO=\pe0.r__addr [0]
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) QEC_BB_Decoder_Top.$auto$alumacc.cc:548:replace_alu$994.slice[0].carry: CO=\pe1.r__addr [0]
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) QEC_BB_Decoder_Top.$auto$alumacc.cc:548:replace_alu$1000.slice[0].carry: CO=\pe0.lif.next_v [8]
+
+2.40.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+
+2.40.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 649 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Removed a total of 0 cells.
+
+2.40.4. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.40.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+
+2.40.6. Rerunning OPT passes. (Removed registers in this run.)
+
+2.40.7. Running ICE40 specific optimizations.
+
+2.40.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+
+2.40.9. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 649 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Removed a total of 0 cells.
+
+2.40.10. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.40.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+
+2.40.12. Finished OPT passes. (There is nothing left to do.)
+
+2.41. Executing DFFLEGALIZE pass (convert FFs and LATCHes to types supported by the target).
+
+2.42. Executing TECHMAP pass (map to technology primitives).
+
+2.42.1. Executing Verilog-2005 frontend: /share/ice40/ff_map.v
+Parsing Verilog input from `/share/ice40/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFF_N_'.
+Generating RTLIL representation for module `$_DFF_P_'.
+Generating RTLIL representation for module `$_DFFE_NP_'.
+Generating RTLIL representation for module `$_DFFE_PP_'.
+Generating RTLIL representation for module `$_DFF_NP0_'.
+Generating RTLIL representation for module `$_DFF_NP1_'.
+Generating RTLIL representation for module `$_DFF_PP0_'.
+Generating RTLIL representation for module `$_DFF_PP1_'.
+Generating RTLIL representation for module `$_DFFE_NP0P_'.
+Generating RTLIL representation for module `$_DFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFFE_PP0P_'.
+Generating RTLIL representation for module `$_DFFE_PP1P_'.
+Generating RTLIL representation for module `$_SDFF_NP0_'.
+Generating RTLIL representation for module `$_SDFF_NP1_'.
+Generating RTLIL representation for module `$_SDFF_PP0_'.
+Generating RTLIL representation for module `$_SDFF_PP1_'.
+Generating RTLIL representation for module `$_SDFFCE_NP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_NP1P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+2.42.2. Continuing TECHMAP pass.
+Using template $_SDFFCE_PP0P_ for cells of type $_SDFFCE_PP0P_.
+No more expansions possible.
+<suppressed ~166 debug messages>
+
+2.43. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+
+2.44. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+Mapping QEC_BB_Decoder_Top.$auto$alumacc.cc:548:replace_alu$1000.slice[0].carry ($lut).
+Mapping QEC_BB_Decoder_Top.$auto$alumacc.cc:548:replace_alu$969.slice[0].carry ($lut).
+Mapping QEC_BB_Decoder_Top.$auto$alumacc.cc:548:replace_alu$988.slice[0].carry ($lut).
+Mapping QEC_BB_Decoder_Top.$auto$alumacc.cc:548:replace_alu$994.slice[0].carry ($lut).
+
+2.45. Executing ICE40_OPT pass (performing simple optimizations).
+
+2.45.1. Running ICE40 specific optimizations.
+
+2.45.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+<suppressed ~56 debug messages>
+
+2.45.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 795 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Computing hashes of 657 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+<suppressed ~414 debug messages>
+Removed a total of 138 cells.
+
+2.45.4. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.45.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+Removed 0 unused cells and 1016 unused wires.
+<suppressed ~1 debug messages>
+
+2.45.6. Rerunning OPT passes. (Removed registers in this run.)
+
+2.45.7. Running ICE40 specific optimizations.
+
+2.45.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+
+2.45.9. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 657 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Removed a total of 0 cells.
+
+2.45.10. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.45.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+
+2.45.12. Finished OPT passes. (There is nothing left to do.)
+
+2.46. Executing CHECK pass (checking for obvious problems).
+Checking module QEC_BB_Decoder_Top...
+Found and reported 0 problems.
+
+2.47. Executing TECHMAP pass (map to technology primitives).
+
+2.47.1. Executing Verilog-2005 frontend: /share/ice40/latches_map.v
+Parsing Verilog input from `/share/ice40/latches_map.v' to AST representation.
+Generating RTLIL representation for module `$_DLATCH_N_'.
+Generating RTLIL representation for module `$_DLATCH_P_'.
+Successfully finished Verilog frontend.
+
+2.47.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+2.48. Executing Verilog-2005 frontend: /share/ice40/abc9_model.v
+Parsing Verilog input from `/share/ice40/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_CARRY_WRAPPER'.
+Successfully finished Verilog frontend.
+
+2.49. Executing ABC9 pass.
+
+2.49.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.49.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.49.3. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module QEC_BB_Decoder_Top.
+Found 0 SCCs.
+
+2.49.4. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.49.5. Executing TECHMAP pass (map to technology primitives).
+
+2.49.5.1. Executing Verilog-2005 frontend: /share/techmap.v
+Parsing Verilog input from `/share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+2.49.5.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~130 debug messages>
+
+2.49.6. Executing OPT pass (performing simple optimizations).
+
+2.49.6.1. Executing OPT_EXPR pass (perform const folding).
+
+2.49.6.2. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+2.49.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Removed 0 multiplexer ports.
+
+2.49.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+Performed a total of 0 changes.
+
+2.49.6.5. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+2.49.6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.49.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+
+2.49.6.8. Executing OPT_EXPR pass (perform const folding).
+
+2.49.6.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.49.7. Executing TECHMAP pass (map to technology primitives).
+
+2.49.7.1. Executing Verilog-2005 frontend: /share/abc9_map.v
+Parsing Verilog input from `/share/abc9_map.v' to AST representation.
+Successfully finished Verilog frontend.
+
+2.49.7.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~2 debug messages>
+
+2.49.8. Executing Verilog-2005 frontend: /share/abc9_model.v
+Parsing Verilog input from `/share/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ABC9_DELAY'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__DFF_N__$abc9_flop'.
+Generating RTLIL representation for module `$__DFF_P__$abc9_flop'.
+Successfully finished Verilog frontend.
+
+2.49.9. Executing ABC9_OPS pass (helper functions for ABC9).
+<suppressed ~290 debug messages>
+
+2.49.10. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.49.11. Executing ABC9_OPS pass (helper functions for ABC9).
+<suppressed ~2 debug messages>
+
+2.49.12. Executing TECHMAP pass (map to technology primitives).
+
+2.49.12.1. Executing Verilog-2005 frontend: /share/techmap.v
+Parsing Verilog input from `/share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+2.49.12.2. Continuing TECHMAP pass.
+Using template $paramod$__ICE40_CARRY_WRAPPER\LUT=16'0110100110010110\I3_IS_CI=1'1 for cells of type $paramod$__ICE40_CARRY_WRAPPER\LUT=16'0110100110010110\I3_IS_CI=1'1.
+Using template SB_CARRY for cells of type SB_CARRY.
+Using template $paramod\SB_LUT4\LUT_INIT=16'0110100110010110 for cells of type SB_LUT4.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $logic_or.
+Using extmapper simplemap for cells of type $logic_and.
+No more expansions possible.
+<suppressed ~150 debug messages>
+
+2.49.13. Executing OPT pass (performing simple optimizations).
+
+2.49.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+<suppressed ~4 debug messages>
+
+2.49.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 30 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Computing hashes of 20 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Computing hashes of 18 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+<suppressed ~29 debug messages>
+Removed a total of 12 cells.
+
+2.49.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \QEC_BB_Decoder_Top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+2.49.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \QEC_BB_Decoder_Top.
+Performed a total of 0 changes.
+
+2.49.13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 18 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Removed a total of 0 cells.
+
+2.49.13.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.49.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+Removed 0 unused cells and 24 unused wires.
+<suppressed ~1 debug messages>
+
+2.49.13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+
+2.49.13.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.49.13.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \QEC_BB_Decoder_Top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+2.49.13.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \QEC_BB_Decoder_Top.
+Performed a total of 0 changes.
+
+2.49.13.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\QEC_BB_Decoder_Top'.
+Computing hashes of 18 cells of `\QEC_BB_Decoder_Top'.
+Finding duplicate cells in `\QEC_BB_Decoder_Top'.
+Removed a total of 0 cells.
+
+2.49.13.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.49.13.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \QEC_BB_Decoder_Top..
+
+2.49.13.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module QEC_BB_Decoder_Top.
+
+2.49.13.16. Finished fast OPT passes. (There is nothing left to do.)
+
+2.49.14. Executing AIGMAP pass (map logic to AIG).
+Module QEC_BB_Decoder_Top: replaced 7 cells with 43 new cells, skipped 11 cells.
+  replaced 2 cell types:
+       5 $_MUX_
+       2 $_OR_
+  not replaced 3 cell types:
+       2 $_AND_
+       1 $_NOT_
+       8 $specify2
+
+2.49.15. Executing AIGMAP pass (map logic to AIG).
+Module QEC_BB_Decoder_Top: replaced 162 cells with 1020 new cells, skipped 783 cells.
+  replaced 3 cell types:
+     120 $_MUX_
+      38 $_OR_
+       4 $_XOR_
+  not replaced 8 cell types:
+      75 $_AND_
+      86 $_NOT_
+       4 $scopeinfo
+       6 SB_MAC16
+     144 SB_DFFESR
+     144 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000000010101
+     144 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000011001011
+     180 $paramod$__ICE40_CARRY_WRAPPER\LUT=16'0110100110010110\I3_IS_CI=1'1
+
+2.49.15.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.49.15.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.49.15.3. Executing XAIGER backend.
+<suppressed ~155 debug messages>
+Extracted 485 AND gates and 2408 wires from module `QEC_BB_Decoder_Top' to a netlist network with 307 inputs and 389 outputs.
+
+2.49.15.4. Executing ABC9_EXE pass (technology mapping using ABC9).
+
+2.49.15.5. Executing ABC9.
+Running ABC command: "/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+
+Preparing to run yowasp-yosys. This might take a while...

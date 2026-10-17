@@ -1,0 +1,34 @@
+[
+  {
+    "variant": "uncorrelated",
+    "step_best": 60,
+    "snn_ler": 0.98046875,
+    "snn_ci": [
+      0.9551012298981227,
+      0.9916293936817815
+    ],
+    "ref_ler": 0.01,
+    "ratio": 98.046875,
+    "spike_rate": 0.31300652027130127,
+    "n_params": 10700,
+    "n_edges": 432,
+    "elapsed_min": 0.2,
+    "stopped": null
+  },
+  {
+    "variant": "correlated",
+    "step_best": 40,
+    "snn_ler": 0.98828125,
+    "snn_ci": [
+      0.9661178322810585,
+      0.9960067851781936
+    ],
+    "ref_ler": 0.105,
+    "ratio": 9.412202380952381,
+    "spike_rate": null,
+    "n_params": 10700,
+    "n_edges": null,
+    "elapsed_min": 0.5,
+    "stopped": null
+  }
+]

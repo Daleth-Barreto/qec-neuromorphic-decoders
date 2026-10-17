@@ -1,0 +1,2 @@
+block_size,rounds,p,total_samples,correct,errors,block_acc,ler,per_log_mean,per_log_worst
+36,6,0.005,1500,1392,108,0.92800000,0.07200000,0.97672224,0.96666664

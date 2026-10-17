@@ -1,0 +1,16 @@
+{
+  "DATA_W": 16,
+  "FRAC_W": 8,
+  "SCALE": 256,
+  "BETA_HW": 230,
+  "THRESH_HW": 256,
+  "N_CHECKS": 36,
+  "MAX_DEGREE": 12,
+  "HIDDEN": 64,
+  "READOUT_HIDDEN": 128,
+  "K_LOGICAL": 12,
+  "NUM_LAYERS": 4,
+  "NUM_STEPS": 30,
+  "ROUNDS": 8,
+  "HEADS": 2
+}

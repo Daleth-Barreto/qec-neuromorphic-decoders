@@ -1,0 +1,60 @@
+[{"stream_name":"stdout","time":0.743466064,"data":"[    0.0s] pip install (No module named 'stim')\n"}
+,{"stream_name":"stdout","time":4.708007958,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 53.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":7.212318855,"data":"[    6.5s] experiments/ntu_neuro.py \u003c- /kaggle/input/datasets/dlthhb/qecbb-data/experiments/ntu_neuro.py\n"}
+,{"stream_name":"stdout","time":7.224837261,"data":"[    6.5s] ntu/transformer.py \u003c- /kaggle/input/datasets/dlthhb/qecbb-data/ntu/transformer.py\n"}
+,{"stream_name":"stdout","time":7.23115753,"data":"[    6.5s] ntu/baseline.py \u003c- /kaggle/input/datasets/dlthhb/qecbb-data/ntu/baseline.py\n"}
+,{"stream_name":"stdout","time":7.237046539,"data":"[    6.5s] ntu/README.md \u003c- /kaggle/input/datasets/dlthhb/qecbb-data/ntu/README.md\n"}
+,{"stream_name":"stdout","time":7.23706209,"data":"[    6.5s] === ntu_neuro p=0.003 ===\n"}
+,{"stream_name":"stdout","time":20.929800688,"data":"[6.1s] model+eval set ready: X=(5000, 432) K=12\n"}
+,{"stream_name":"stdout","time":148.991832095,"data":"[128.1s] fp32             LER=5.2000e-03 mean=0.9978 worst=0.9972\n"}
+,{"stream_name":"stdout","time":285.960456889,"data":"[137.0s] w8a16            LER=5.4000e-03 mean=0.9977 worst=0.9972\n"}
+,{"stream_name":"stdout","time":420.923284913,"data":"[135.0s] w4a16            LER=5.8000e-03 mean=0.9977 worst=0.9970\n"}
+,{"stream_name":"stdout","time":555.611421665,"data":"[134.7s] w2a16            LER=9.9720e-01 mean=0.5500 worst=0.3786\n"}
+,{"stream_name":"stdout","time":690.781706982,"data":"[135.2s] ternary_w        LER=9.9760e-01 mean=0.5565 worst=0.4468\n"}
+,{"stream_name":"stdout","time":830.132874406,"data":"[139.4s] w8a8             LER=5.8000e-03 mean=0.9977 worst=0.9972\n"}
+,{"stream_name":"stdout","time":969.060547161,"data":"[138.9s] w4a8             LER=6.0000e-03 mean=0.9978 worst=0.9970\n"}
+,{"stream_name":"stdout","time":1107.89247849,"data":"[138.8s] w4a4             LER=3.9380e-01 mean=0.9554 worst=0.7906\n"}
+,{"stream_name":"stdout","time":1243.559961299,"data":"[135.7s] w2a4             LER=9.9720e-01 mean=0.5519 worst=0.3802\n"}
+,{"stream_name":"stdout","time":1381.707927904,"data":"[138.1s] ternary_w_a4     LER=9.9320e-01 mean=0.5714 worst=0.4744\n"}
+,{"stream_name":"stdout","time":1523.40922046,"data":"[141.7s] sparse_a_thr0.05 LER=5.2000e-03 mean=0.9978 worst=0.9972 act=0.801\n"}
+,{"stream_name":"stdout","time":1664.889686499,"data":"[141.5s] sparse_a_thr0.1  LER=5.4000e-03 mean=0.9976 worst=0.9972 act=0.719\n"}
+,{"stream_name":"stdout","time":1806.626772665,"data":"[141.7s] sparse_a_thr0.15 LER=6.6000e-03 mean=0.9976 worst=0.9970 act=0.626\n"}
+,{"stream_name":"stdout","time":1948.001408253,"data":"[141.4s] sparse_a_thr0.2  LER=9.8200e-02 mean=0.9896 worst=0.9134 act=0.511\n"}
+,{"stream_name":"stdout","time":2089.544254262,"data":"[141.5s] sparse_a_thr0.25 LER=3.6560e-01 mean=0.9500 worst=0.8316 act=0.354\n"}
+,{"stream_name":"stdout","time":2231.589322874,"data":"[142.0s] sparse_a_thr0.3  LER=9.0840e-01 mean=0.7551 worst=0.4902 act=0.119\n"}
+,{"stream_name":"stdout","time":2366.785759697,"data":"[135.2s] act_relu         LER=9.4300e-01 mean=0.7372 worst=0.4074\n"}
+,{"stream_name":"stdout","time":2505.670930679,"data":"[138.9s] act_relu_w8a8    LER=9.4320e-01 mean=0.7367 worst=0.4094\n"}
+,{"stream_name":"stdout","time":2644.812367039,"data":"[139.1s] act_relu_w4a8    LER=9.3260e-01 mean=0.7286 worst=0.4846\n"}
+,{"stream_name":"stdout","time":2644.813055602,"data":"-\u003e /kaggle/working/ntu_neuro_p0.003.json  (2630s total)\n"}
+,{"stream_name":"stdout","time":2647.907154771,"data":"[ 2647.2s] p=0.003 rc=0 file_out=True\n"}
+,{"stream_name":"stdout","time":2647.907217696,"data":"[ 2647.2s] === ntu_neuro p=0.005 ===\n"}
+,{"stream_name":"stdout","time":2652.204329387,"data":"[2.7s] model+eval set ready: X=(5000, 432) K=12\n"}
+,{"stream_name":"stdout","time":2789.953199252,"data":"[137.7s] fp32             LER=8.2600e-02 mean=0.9732 worst=0.9638\n"}
+,{"stream_name":"stdout","time":2926.694336411,"data":"[136.7s] w8a16            LER=8.2200e-02 mean=0.9734 worst=0.9628\n"}
+,{"stream_name":"stdout","time":3062.683528661,"data":"[136.0s] w4a16            LER=9.3800e-02 mean=0.9714 worst=0.9564\n"}
+,{"stream_name":"stdout","time":3196.303408179,"data":"[133.6s] w2a16            LER=9.9880e-01 mean=0.5243 worst=0.4430\n"}
+,{"stream_name":"stdout","time":3332.003218995,"data":"[135.7s] ternary_w        LER=9.9860e-01 mean=0.5243 worst=0.4566\n"}
+,{"stream_name":"stdout","time":3471.834223909,"data":"[139.8s] w8a8             LER=8.1800e-02 mean=0.9734 worst=0.9636\n"}
+,{"stream_name":"stdout","time":3610.739217473,"data":"[138.9s] w4a8             LER=9.6000e-02 mean=0.9712 worst=0.9560\n"}
+,{"stream_name":"stdout","time":3749.958911624,"data":"[139.2s] w4a4             LER=5.8700e-01 mean=0.9069 worst=0.6842\n"}
+,{"stream_name":"stdout","time":3886.517029879,"data":"[136.6s] w2a4             LER=9.9880e-01 mean=0.5239 worst=0.4430\n"}
+,{"stream_name":"stdout","time":4025.082028745,"data":"[138.6s] ternary_w_a4     LER=9.9820e-01 mean=0.5311 worst=0.4902\n"}
+,{"stream_name":"stdout","time":4167.890329554,"data":"[142.8s] sparse_a_thr0.05 LER=8.3600e-02 mean=0.9731 worst=0.9628 act=0.802\n"}
+,{"stream_name":"stdout","time":4309.99568876,"data":"[142.1s] sparse_a_thr0.1  LER=8.4400e-02 mean=0.9724 worst=0.9598 act=0.721\n"}
+,{"stream_name":"stdout","time":4451.513811443,"data":"[141.5s] sparse_a_thr0.15 LER=1.0880e-01 mean=0.9690 worst=0.9484 act=0.629\n"}
+,{"stream_name":"stdout","time":4593.134493839,"data":"[141.6s] sparse_a_thr0.2  LER=2.9440e-01 mean=0.9488 worst=0.7810 act=0.515\n"}
+,{"stream_name":"stdout","time":4736.071561082,"data":"[142.9s] sparse_a_thr0.25 LER=6.1680e-01 mean=0.8811 worst=0.7288 act=0.358\n"}
+,{"stream_name":"stdout","time":4877.126148245,"data":"[141.1s] sparse_a_thr0.3  LER=9.8140e-01 mean=0.6339 worst=0.4824 act=0.122\n"}
+,{"stream_name":"stdout","time":5013.425972082,"data":"[136.3s] act_relu         LER=9.8820e-01 mean=0.6271 worst=0.4758\n"}
+,{"stream_name":"stdout","time":5152.271768146,"data":"[138.8s] act_relu_w8a8    LER=9.8800e-01 mean=0.6255 worst=0.4744\n"}
+,{"stream_name":"stdout","time":5291.540753722,"data":"[139.3s] act_relu_w4a8    LER=9.8760e-01 mean=0.6125 worst=0.5012\n"}
+,{"stream_name":"stdout","time":5291.541425312,"data":"-\u003e /kaggle/working/ntu_neuro_p0.005.json  (2642s total)\n"}
+,{"stream_name":"stdout","time":5292.213101846,"data":"[ 5291.5s] p=0.005 rc=0 file_out=True\n"}
+,{"stream_name":"stdout","time":5292.213139546,"data":"[ 5291.5s] FIN total=88.2min\n"}
+,{"stream_name":"stderr","time":5294.472677266,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":5294.47270494,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":5294.784736102,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":5294.784759147,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":5295.569766479,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":5296.64649316,"data":"[NbConvertApp] Writing 284928 bytes to __results__.html\n"}
+]

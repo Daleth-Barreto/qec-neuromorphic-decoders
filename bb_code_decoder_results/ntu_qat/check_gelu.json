@@ -1,0 +1,20 @@
+{
+  "p": 0.003,
+  "eval_p": 0.003,
+  "shots": 1000,
+  "steps": 0,
+  "w_bits": null,
+  "a_bits": null,
+  "ternary_w": false,
+  "act": "gelu",
+  "lif_thr": 0.0,
+  "sparsity_thr": null,
+  "lr": 0.0001,
+  "batch": 256,
+  "baseline_ler": 0.0040000000000000036,
+  "baseline_per_log_mean": 0.9985000093777975,
+  "final_ler": null,
+  "final_act_fraction": null,
+  "history": [],
+  "note": "C1 QAT/STE fine-tune of pretrained BB transformer; faithful BB72"
+}

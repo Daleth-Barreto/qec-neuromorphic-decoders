@@ -1,11 +1,37 @@
-# ICEIC 2027 submission artifacts - kept local only (avoid public leak pre/post venue)
+# ---- Credentials / secrets ----
+KAGGLE_TOKENS.md
+*.token
+.env
+
+# ---- Kaggle orchestration (contains dataset zips + creds refs) ----
+kaggle/
+
+# ---- Python bytecode / caches ----
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# ---- Heavy / regenerable data artifacts ----
+*.npz
+*.pkl
+bb_code_decoder_results/*.zip
+
+# ---- LaTeX build artifacts (scoped to paper dir only) ----
+paper_iceic/*.aux
+paper_iceic/*.log
+paper_iceic/*.out
+paper_iceic/*.bbl
+paper_iceic/*.blg
+paper_iceic/*.toc
+paper_iceic/*.synctex.gz
+
+# ---- Top-level delivery bundles (kept local / EDAS only) ----
 ICEIC2027_QEC.pdf
 ICEIC2027_QEC_source.zip
 paper_iceic_main.tex
-*.pdf
-*.zip
-*.aux
-*.log
-*.out
-*.bbl
-*.blg
+paper_iceic_main.pdf
+
+# ---- OS junk ----
+Thumbs.db
+.DS_Store

@@ -1,0 +1,155 @@
+[{"stream_name":"stdout","time":9.628285663,"data":"[    0.3s] torch=2.11.0+cu128 cuda=True dev=Tesla T4\n"}
+,{"stream_name":"stdout","time":9.628504508,"data":"[    0.3s] pip install (No module named 'stim')\n"}
+,{"stream_name":"stdout","time":12.917049800000001,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 49.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":15.533522106,"data":"[    6.2s] ntu/baseline.py OK\n"}
+,{"stream_name":"stdout","time":15.553165583,"data":"[    6.2s] ntu/transformer.py OK\n"}
+,{"stream_name":"stdout","time":15.571962593,"data":"[    6.2s] ntu/README.md OK\n"}
+,{"stream_name":"stdout","time":15.986178311,"data":"[    6.7s] === transformer eval p=0.001 shots=5000 ===\n"}
+,{"stream_name":"stdout","time":15.987410106,"data":"Downloading from Hugging Face Hub: Dreamworldsmile/ntu-surface-code-decoder/bb/bb72_transformer.pt\n"}
+,{"stream_name":"stdout","time":20.556109691,"data":"=== BB Transformer Evaluation | block_size=36 l=6 m=6 rounds=6 p=0.001 ===\n"}
+,{"stream_name":"stdout","time":20.556136757,"data":"    device=cuda:0  shots=5000  batch_size=256\n"}
+,{"stream_name":"stdout","time":22.290826747,"data":"    num_stab=72  num_t=7  total_det=432  n_logicals=12\n"}
+,{"stream_name":"stdout","time":23.044107702,"data":"    model params: 35.98M\n"}
+,{"stream_name":"stdout","time":23.044149205,"data":"    loading checkpoint: /root/.cache/huggingface/hub/models--Dreamworldsmile--ntu-surface-code-decoder/snapshots/a97a6cdb348d939f7658f00b136fb3d88c68b6c8/bb/bb72_transformer.pt\n"}
+,{"stream_name":"stdout","time":23.177062643,"data":"    transferred 132 tensors (missing=1, unexpected=0)\n"}
+,{"stream_name":"stdout","time":23.177108066,"data":"    checkpoint step: 10500\n"}
+,{"stream_name":"stdout","time":23.177112676,"data":"    checkpoint block_acc: 92.285%\n"}
+,{"stream_name":"stdout","time":33.845490992,"data":"    [512/5000 samples | 10.2%]  block_acc=100.000%  rate=50 samp/s\n"}
+,{"stream_name":"stdout","time":43.622797952,"data":"    [1024/5000 samples | 20.5%]  block_acc=100.000%  rate=51 samp/s\n"}
+,{"stream_name":"stdout","time":53.646746899,"data":"    [1536/5000 samples | 30.7%]  block_acc=99.935%  rate=51 samp/s\n"}
+,{"stream_name":"stdout","time":63.94276655,"data":"    [2048/5000 samples | 41.0%]  block_acc=99.951%  rate=51 samp/s\n"}
+,{"stream_name":"stdout","time":74.467753548,"data":"    [2560/5000 samples | 51.2%]  block_acc=99.961%  rate=50 samp/s\n"}
+,{"stream_name":"stdout","time":85.35151714,"data":"    [3072/5000 samples | 61.4%]  block_acc=99.967%  rate=50 samp/s\n"}
+,{"stream_name":"stdout","time":96.602469791,"data":"    [3584/5000 samples | 71.7%]  block_acc=99.972%  rate=49 samp/s\n"}
+,{"stream_name":"stdout","time":108.31876784,"data":"    [4096/5000 samples | 81.9%]  block_acc=99.976%  rate=48 samp/s\n"}
+,{"stream_name":"stdout","time":120.221373586,"data":"    [4608/5000 samples | 92.2%]  block_acc=99.978%  rate=48 samp/s\n"}
+,{"stream_name":"stdout","time":129.011726239,"data":"    [5000/5000 samples | 100.0%]  block_acc=99.980%  rate=47 samp/s\n"}
+,{"stream_name":"stdout","time":129.06599099,"data":"    === Results ===\n"}
+,{"stream_name":"stdout","time":129.066030335,"data":"    total_samples: 5000\n"}
+,{"stream_name":"stdout","time":129.066036198,"data":"    block_acc:     99.980000%\n"}
+,{"stream_name":"stdout","time":129.066040806,"data":"    LER:           2.000000e-04\n"}
+,{"stream_name":"stdout","time":129.066045557,"data":"    per_log_mean:  99.998%\n"}
+,{"stream_name":"stdout","time":129.066050138,"data":"    per_log_worst: 99.980%\n"}
+,{"stream_name":"stdout","time":129.066054764,"data":"    elapsed:       105.6s  rate: 47 samp/s\n"}
+,{"stream_name":"stdout","time":129.06643692,"data":"    Results saved to bb36_transformer_eval_r6_p0.001.csv\n"}
+,{"stream_name":"stdout","time":129.067664055,"data":"[  119.7s] === transformer eval p=0.002 shots=5000 ===\n"}
+,{"stream_name":"stdout","time":129.068849471,"data":"Downloading from Hugging Face Hub: Dreamworldsmile/ntu-surface-code-decoder/bb/bb72_transformer.pt\n"}
+,{"stream_name":"stderr","time":129.160382668,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":129.16100821,"data":"=== BB Transformer Evaluation | block_size=36 l=6 m=6 rounds=6 p=0.002 ===\n"}
+,{"stream_name":"stdout","time":129.161024134,"data":"    device=cuda:0  shots=5000  batch_size=256\n"}
+,{"stream_name":"stdout","time":129.984905111,"data":"    num_stab=72  num_t=7  total_det=432  n_logicals=12\n"}
+,{"stream_name":"stdout","time":130.345023824,"data":"    model params: 35.98M\n"}
+,{"stream_name":"stdout","time":130.345070933,"data":"    loading checkpoint: /root/.cache/huggingface/hub/models--Dreamworldsmile--ntu-surface-code-decoder/snapshots/a97a6cdb348d939f7658f00b136fb3d88c68b6c8/bb/bb72_transformer.pt\n"}
+,{"stream_name":"stdout","time":130.445986749,"data":"    transferred 132 tensors (missing=1, unexpected=0)\n"}
+,{"stream_name":"stdout","time":130.446031016,"data":"    checkpoint step: 10500\n"}
+,{"stream_name":"stdout","time":130.446035211,"data":"    checkpoint block_acc: 92.285%\n"}
+,{"stream_name":"stdout","time":142.105909106,"data":"    [512/5000 samples | 10.2%]  block_acc=100.000%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":153.25093109,"data":"    [1024/5000 samples | 20.5%]  block_acc=100.000%  rate=46 samp/s\n"}
+,{"stream_name":"stdout","time":164.402744204,"data":"    [1536/5000 samples | 30.7%]  block_acc=99.935%  rate=46 samp/s\n"}
+,{"stream_name":"stdout","time":175.644063783,"data":"    [2048/5000 samples | 41.0%]  block_acc=99.902%  rate=46 samp/s\n"}
+,{"stream_name":"stdout","time":187.007416799,"data":"    [2560/5000 samples | 51.2%]  block_acc=99.922%  rate=46 samp/s\n"}
+,{"stream_name":"stdout","time":198.44869172,"data":"    [3072/5000 samples | 61.4%]  block_acc=99.870%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":209.855917484,"data":"    [3584/5000 samples | 71.7%]  block_acc=99.860%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":221.201233303,"data":"    [4096/5000 samples | 81.9%]  block_acc=99.878%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":232.486565228,"data":"    [4608/5000 samples | 92.2%]  block_acc=99.891%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":241.054966736,"data":"    [5000/5000 samples | 100.0%]  block_acc=99.900%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":241.059890093,"data":"    === Results ===\n"}
+,{"stream_name":"stdout","time":241.060252228,"data":"    total_samples: 5000\n"}
+,{"stream_name":"stdout","time":241.0602727,"data":"    block_acc:     99.900000%\n"}
+,{"stream_name":"stdout","time":241.060278684,"data":"    LER:           1.000000e-03\n"}
+,{"stream_name":"stdout","time":241.060283036,"data":"    per_log_mean:  99.955%\n"}
+,{"stream_name":"stdout","time":241.060288215,"data":"    per_log_worst: 99.920%\n"}
+,{"stream_name":"stdout","time":241.060292556,"data":"    elapsed:       110.2s  rate: 45 samp/s\n"}
+,{"stream_name":"stdout","time":241.06045479,"data":"    Results saved to bb36_transformer_eval_r6_p0.002.csv\n"}
+,{"stream_name":"stdout","time":241.06248977,"data":"[  231.7s] === transformer eval p=0.003 shots=5000 ===\n"}
+,{"stream_name":"stdout","time":241.064464343,"data":"Downloading from Hugging Face Hub: Dreamworldsmile/ntu-surface-code-decoder/bb/bb72_transformer.pt\n"}
+,{"stream_name":"stdout","time":241.177638194,"data":"=== BB Transformer Evaluation | block_size=36 l=6 m=6 rounds=6 p=0.003 ===\n"}
+,{"stream_name":"stdout","time":241.177678439,"data":"    device=cuda:0  shots=5000  batch_size=256\n"}
+,{"stream_name":"stdout","time":242.017384425,"data":"    num_stab=72  num_t=7  total_det=432  n_logicals=12\n"}
+,{"stream_name":"stdout","time":242.380525799,"data":"    model params: 35.98M\n"}
+,{"stream_name":"stdout","time":242.380557518,"data":"    loading checkpoint: /root/.cache/huggingface/hub/models--Dreamworldsmile--ntu-surface-code-decoder/snapshots/a97a6cdb348d939f7658f00b136fb3d88c68b6c8/bb/bb72_transformer.pt\n"}
+,{"stream_name":"stdout","time":242.477216045,"data":"    transferred 132 tensors (missing=1, unexpected=0)\n"}
+,{"stream_name":"stdout","time":242.477262639,"data":"    checkpoint step: 10500\n"}
+,{"stream_name":"stdout","time":242.47726768,"data":"    checkpoint block_acc: 92.285%\n"}
+,{"stream_name":"stdout","time":254.127851546,"data":"    [512/5000 samples | 10.2%]  block_acc=99.414%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":265.446260883,"data":"    [1024/5000 samples | 20.5%]  block_acc=99.512%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":276.828770375,"data":"    [1536/5000 samples | 30.7%]  block_acc=99.479%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":288.262511158,"data":"    [2048/5000 samples | 41.0%]  block_acc=99.561%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":299.684714081,"data":"    [2560/5000 samples | 51.2%]  block_acc=99.609%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":311.061361617,"data":"    [3072/5000 samples | 61.4%]  block_acc=99.512%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":322.421343677,"data":"    [3584/5000 samples | 71.7%]  block_acc=99.554%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":333.790015561,"data":"    [4096/5000 samples | 81.9%]  block_acc=99.536%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":345.145118938,"data":"    [4608/5000 samples | 92.2%]  block_acc=99.501%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":353.777896686,"data":"    [5000/5000 samples | 100.0%]  block_acc=99.420%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":353.781616714,"data":"    === Results ===\n"}
+,{"stream_name":"stdout","time":353.781647167,"data":"    total_samples: 5000\n"}
+,{"stream_name":"stdout","time":353.781652828,"data":"    block_acc:     99.420000%\n"}
+,{"stream_name":"stdout","time":353.781657692,"data":"    LER:           5.800000e-03\n"}
+,{"stream_name":"stdout","time":353.781668562,"data":"    per_log_mean:  99.825%\n"}
+,{"stream_name":"stdout","time":353.781688247,"data":"    per_log_worst: 99.700%\n"}
+,{"stream_name":"stdout","time":353.781694222,"data":"    elapsed:       110.9s  rate: 45 samp/s\n"}
+,{"stream_name":"stdout","time":353.781899522,"data":"    Results saved to bb36_transformer_eval_r6_p0.003.csv\n"}
+,{"stream_name":"stdout","time":353.783338678,"data":"[  344.5s] === transformer eval p=0.004 shots=5000 ===\n"}
+,{"stream_name":"stdout","time":353.784477538,"data":"Downloading from Hugging Face Hub: Dreamworldsmile/ntu-surface-code-decoder/bb/bb72_transformer.pt\n"}
+,{"stream_name":"stdout","time":353.873732902,"data":"=== BB Transformer Evaluation | block_size=36 l=6 m=6 rounds=6 p=0.004 ===\n"}
+,{"stream_name":"stdout","time":353.873769771,"data":"    device=cuda:0  shots=5000  batch_size=256\n"}
+,{"stream_name":"stdout","time":354.73478755,"data":"    num_stab=72  num_t=7  total_det=432  n_logicals=12\n"}
+,{"stream_name":"stdout","time":355.128897119,"data":"    model params: 35.98M\n"}
+,{"stream_name":"stdout","time":355.128969,"data":"    loading checkpoint: /root/.cache/huggingface/hub/models--Dreamworldsmile--ntu-surface-code-decoder/snapshots/a97a6cdb348d939f7658f00b136fb3d88c68b6c8/bb/bb72_transformer.pt\n"}
+,{"stream_name":"stdout","time":355.241984198,"data":"    transferred 132 tensors (missing=1, unexpected=0)\n"}
+,{"stream_name":"stdout","time":355.242023691,"data":"    checkpoint step: 10500\n"}
+,{"stream_name":"stdout","time":355.242030228,"data":"    checkpoint block_acc: 92.285%\n"}
+,{"stream_name":"stdout","time":366.888205966,"data":"    [512/5000 samples | 10.2%]  block_acc=97.852%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":378.208760397,"data":"    [1024/5000 samples | 20.5%]  block_acc=97.754%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":389.559457926,"data":"    [1536/5000 samples | 30.7%]  block_acc=97.852%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":400.9228592,"data":"    [2048/5000 samples | 41.0%]  block_acc=97.998%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":412.298122474,"data":"    [2560/5000 samples | 51.2%]  block_acc=98.008%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":423.678964983,"data":"    [3072/5000 samples | 61.4%]  block_acc=97.917%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":435.055706838,"data":"    [3584/5000 samples | 71.7%]  block_acc=98.019%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":446.428176638,"data":"    [4096/5000 samples | 81.9%]  block_acc=97.827%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":457.80462397,"data":"    [4608/5000 samples | 92.2%]  block_acc=97.743%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":466.472140338,"data":"    [5000/5000 samples | 100.0%]  block_acc=97.700%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":466.4757722,"data":"    === Results ===\n"}
+,{"stream_name":"stdout","time":466.47581219,"data":"    total_samples: 5000\n"}
+,{"stream_name":"stdout","time":466.475819115,"data":"    block_acc:     97.700000%\n"}
+,{"stream_name":"stdout","time":466.475824025,"data":"    LER:           2.300000e-02\n"}
+,{"stream_name":"stdout","time":466.47582915,"data":"    per_log_mean:  99.265%\n"}
+,{"stream_name":"stdout","time":466.475834492,"data":"    per_log_worst: 98.900%\n"}
+,{"stream_name":"stdout","time":466.475839569,"data":"    elapsed:       110.9s  rate: 45 samp/s\n"}
+,{"stream_name":"stdout","time":466.476126106,"data":"    Results saved to bb36_transformer_eval_r6_p0.004.csv\n"}
+,{"stream_name":"stdout","time":466.47735544,"data":"[  457.2s] === transformer eval p=0.005 shots=5000 ===\n"}
+,{"stream_name":"stdout","time":466.478331743,"data":"Downloading from Hugging Face Hub: Dreamworldsmile/ntu-surface-code-decoder/bb/bb72_transformer.pt\n"}
+,{"stream_name":"stdout","time":466.608722512,"data":"=== BB Transformer Evaluation | block_size=36 l=6 m=6 rounds=6 p=0.005 ===\n"}
+,{"stream_name":"stdout","time":466.608757574,"data":"    device=cuda:0  shots=5000  batch_size=256\n"}
+,{"stream_name":"stdout","time":467.454761249,"data":"    num_stab=72  num_t=7  total_det=432  n_logicals=12\n"}
+,{"stream_name":"stdout","time":467.826775089,"data":"    model params: 35.98M\n"}
+,{"stream_name":"stdout","time":467.826814362,"data":"    loading checkpoint: /root/.cache/huggingface/hub/models--Dreamworldsmile--ntu-surface-code-decoder/snapshots/a97a6cdb348d939f7658f00b136fb3d88c68b6c8/bb/bb72_transformer.pt\n"}
+,{"stream_name":"stdout","time":467.941089653,"data":"    transferred 132 tensors (missing=1, unexpected=0)\n"}
+,{"stream_name":"stdout","time":467.941147985,"data":"    checkpoint step: 10500\n"}
+,{"stream_name":"stdout","time":467.941155331,"data":"    checkpoint block_acc: 92.285%\n"}
+,{"stream_name":"stdout","time":479.69690574,"data":"    [512/5000 samples | 10.2%]  block_acc=90.625%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":491.059761147,"data":"    [1024/5000 samples | 20.5%]  block_acc=90.039%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":502.441530699,"data":"    [1536/5000 samples | 30.7%]  block_acc=90.430%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":513.832753889,"data":"    [2048/5000 samples | 41.0%]  block_acc=90.381%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":525.243804541,"data":"    [2560/5000 samples | 51.2%]  block_acc=90.977%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":536.668579802,"data":"    [3072/5000 samples | 61.4%]  block_acc=91.178%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":548.098341569,"data":"    [3584/5000 samples | 71.7%]  block_acc=91.295%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":559.534499469,"data":"    [4096/5000 samples | 81.9%]  block_acc=91.650%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":570.954887195,"data":"    [4608/5000 samples | 92.2%]  block_acc=91.623%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":579.655348856,"data":"    [5000/5000 samples | 100.0%]  block_acc=91.800%  rate=45 samp/s\n"}
+,{"stream_name":"stdout","time":579.658833262,"data":"    === Results ===\n"}
+,{"stream_name":"stdout","time":579.658852894,"data":"    total_samples: 5000\n"}
+,{"stream_name":"stdout","time":579.658857592,"data":"    block_acc:     91.800000%\n"}
+,{"stream_name":"stdout","time":579.658862039,"data":"    LER:           8.200000e-02\n"}
+,{"stream_name":"stdout","time":579.658874751,"data":"    per_log_mean:  97.255%\n"}
+,{"stream_name":"stdout","time":579.65887915,"data":"    per_log_worst: 96.200%\n"}
+,{"stream_name":"stdout","time":579.658883707,"data":"    elapsed:       111.4s  rate: 45 samp/s\n"}
+,{"stream_name":"stdout","time":579.659175971,"data":"    Results saved to bb36_transformer_eval_r6_p0.005.csv\n"}
+,{"stream_name":"stdout","time":579.660282612,"data":"[  570.3s] FIN total=9.5min\n"}
+,{"stream_name":"stderr","time":585.542479128,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":585.542504706,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":585.852224811,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":585.852248631,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":586.626634016,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":587.701694838,"data":"[NbConvertApp] Writing 286172 bytes to __results__.html\n"}
+]

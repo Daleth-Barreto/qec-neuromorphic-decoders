@@ -1,0 +1,53 @@
+[{"stream_name":"stdout","time":1.14709763,"data":"[    0.0s] pip install (No module named 'stim')\n"}
+,{"stream_name":"stdout","time":5.751453712,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 40.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":8.124714424,"data":"[    7.0s] experiments/ntu_neuro.py \u003c- /kaggle/input/datasets/dalethhernandez/qecbb-data/experiments/ntu_neuro.py\n"}
+,{"stream_name":"stdout","time":8.149372272,"data":"[    7.0s] ntu/transformer.py \u003c- /kaggle/input/datasets/dalethhernandez/qecbb-data/ntu/transformer.py\n"}
+,{"stream_name":"stdout","time":8.156090122,"data":"[    7.0s] ntu/baseline.py \u003c- /kaggle/input/datasets/dalethhernandez/qecbb-data/ntu/baseline.py\n"}
+,{"stream_name":"stdout","time":8.165613865,"data":"[    7.0s] ntu/README.md \u003c- /kaggle/input/datasets/dalethhernandez/qecbb-data/ntu/README.md\n"}
+,{"stream_name":"stdout","time":8.16563109,"data":"[    7.0s] === ntu_neuro p=0.003 ===\n"}
+,{"stream_name":"stderr","time":19.517923533,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":22.912160193,"data":"[6.5s] model+eval set ready: X=(5000, 432) K=12\n"}
+,{"stream_name":"stdout","time":138.757076404,"data":"[115.8s] fp32             LER=6.2000e-03 mean=0.9982 worst=0.9968\n"}
+,{"stream_name":"stdout","time":275.954260173,"data":"[137.2s] w8a16            LER=6.2000e-03 mean=0.9982 worst=0.9966\n"}
+,{"stream_name":"stdout","time":410.162845211,"data":"[134.2s] w4a16            LER=6.4000e-03 mean=0.9981 worst=0.9964\n"}
+,{"stream_name":"stdout","time":543.310274178,"data":"[133.1s] w2a16            LER=9.9780e-01 mean=0.5551 worst=0.3808\n"}
+,{"stream_name":"stdout","time":678.17258384,"data":"[134.9s] ternary_w        LER=9.9700e-01 mean=0.5594 worst=0.4532\n"}
+,{"stream_name":"stdout","time":815.960376396,"data":"[137.8s] w8a8             LER=6.0000e-03 mean=0.9982 worst=0.9968\n"}
+,{"stream_name":"stdout","time":954.277957136,"data":"[138.3s] w4a8             LER=6.6000e-03 mean=0.9980 worst=0.9960\n"}
+,{"stream_name":"stdout","time":1091.265031409,"data":"[137.0s] w4a4             LER=3.8880e-01 mean=0.9564 worst=0.7774\n"}
+,{"stream_name":"stdout","time":1226.671134587,"data":"[135.4s] w2a4             LER=9.9740e-01 mean=0.5573 worst=0.3844\n"}
+,{"stream_name":"stdout","time":1363.779146343,"data":"[137.1s] ternary_w_a4     LER=9.9440e-01 mean=0.5742 worst=0.4702\n"}
+,{"stream_name":"stdout","time":1504.659038819,"data":"[140.9s] sparse_a_thr0.1  LER=5.2000e-03 mean=0.9983 worst=0.9976 act=0.719\n"}
+,{"stream_name":"stdout","time":1644.749383221,"data":"[140.1s] sparse_a_thr0.3  LER=9.0620e-01 mean=0.7540 worst=0.4602 act=0.119\n"}
+,{"stream_name":"stdout","time":1779.453443641,"data":"[134.7s] act_relu         LER=9.2980e-01 mean=0.7416 worst=0.4172\n"}
+,{"stream_name":"stdout","time":1916.929129601,"data":"[137.5s] act_relu_w8a8    LER=9.2800e-01 mean=0.7415 worst=0.4192\n"}
+,{"stream_name":"stdout","time":2054.947005156,"data":"[138.0s] act_relu_w4a8    LER=9.2540e-01 mean=0.7311 worst=0.4960\n"}
+,{"stream_name":"stdout","time":2054.94764539,"data":"-\u003e /kaggle/working/ntu_neuro_p0.003.json  (2039s total)\n"}
+,{"stream_name":"stdout","time":2058.651796549,"data":"[ 2057.5s] p=0.003 rc=0 file_out=True\n"}
+,{"stream_name":"stdout","time":2058.651834508,"data":"[ 2057.5s] === ntu_neuro p=0.005 ===\n"}
+,{"stream_name":"stdout","time":2063.031475176,"data":"[2.8s] model+eval set ready: X=(5000, 432) K=12\n"}
+,{"stream_name":"stdout","time":2199.8219873,"data":"[136.8s] fp32             LER=8.2200e-02 mean=0.9730 worst=0.9620\n"}
+,{"stream_name":"stdout","time":2335.389081137,"data":"[135.6s] w8a16            LER=8.2200e-02 mean=0.9731 worst=0.9618\n"}
+,{"stream_name":"stdout","time":2471.303045213,"data":"[135.9s] w4a16            LER=9.3200e-02 mean=0.9706 worst=0.9560\n"}
+,{"stream_name":"stdout","time":2604.476399616,"data":"[133.2s] w2a16            LER=9.9900e-01 mean=0.5220 worst=0.4362\n"}
+,{"stream_name":"stdout","time":2738.576680756,"data":"[134.1s] ternary_w        LER=9.9900e-01 mean=0.5216 worst=0.4488\n"}
+,{"stream_name":"stdout","time":2877.391704469,"data":"[138.8s] w8a8             LER=8.2000e-02 mean=0.9731 worst=0.9626\n"}
+,{"stream_name":"stdout","time":3015.932630693,"data":"[138.5s] w4a8             LER=9.4200e-02 mean=0.9703 worst=0.9552\n"}
+,{"stream_name":"stdout","time":3154.660345417,"data":"[138.7s] w4a4             LER=5.7800e-01 mean=0.9100 worst=0.6944\n"}
+,{"stream_name":"stdout","time":3289.550526543,"data":"[134.9s] w2a4             LER=9.9880e-01 mean=0.5210 worst=0.4366\n"}
+,{"stream_name":"stdout","time":3425.923972251,"data":"[136.4s] ternary_w_a4     LER=9.9840e-01 mean=0.5288 worst=0.4768\n"}
+,{"stream_name":"stdout","time":3566.654969055,"data":"[140.7s] sparse_a_thr0.1  LER=8.6200e-02 mean=0.9721 worst=0.9616 act=0.721\n"}
+,{"stream_name":"stdout","time":3707.559145237,"data":"[140.9s] sparse_a_thr0.3  LER=9.7800e-01 mean=0.6425 worst=0.4788 act=0.122\n"}
+,{"stream_name":"stdout","time":3842.656233437,"data":"[135.1s] act_relu         LER=9.8700e-01 mean=0.6313 worst=0.4648\n"}
+,{"stream_name":"stdout","time":3980.633744447,"data":"[138.0s] act_relu_w8a8    LER=9.8700e-01 mean=0.6302 worst=0.4650\n"}
+,{"stream_name":"stdout","time":4118.542363803,"data":"[137.9s] act_relu_w4a8    LER=9.8380e-01 mean=0.6198 worst=0.4910\n"}
+,{"stream_name":"stdout","time":4118.542992543,"data":"-\u003e /kaggle/working/ntu_neuro_p0.005.json  (2058s total)\n"}
+,{"stream_name":"stdout","time":4119.188589274,"data":"[ 4118.0s] p=0.005 rc=0 file_out=True\n"}
+,{"stream_name":"stdout","time":4119.188621433,"data":"[ 4118.0s] FIN total=68.6min\n"}
+,{"stream_name":"stderr","time":4121.511349814,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":4121.511378404,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4121.822602407,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4121.822629414,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":4122.606514266,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":4123.729967414,"data":"[NbConvertApp] Writing 284928 bytes to __results__.html\n"}
+]

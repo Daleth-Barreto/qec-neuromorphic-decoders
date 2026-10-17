@@ -1,0 +1,490 @@
+{
+  "metric": "block LER (K=12), QAT/STE fine-tune (cosine), BB72",
+  "p": 0.003,
+  "fp32_ref_ler": 0.005199999999999982,
+  "configs": [
+    {
+      "name": "gelu",
+      "w_bits": null,
+      "a_bits": null,
+      "sparsity_thr": null,
+      "batch": 64,
+      "lr_schedule": "cosine",
+      "shots": 3000,
+      "steps": 300,
+      "baseline_ler": 0.005666666666666709,
+      "baseline_ci": [
+        0.0035410565832478284,
+        0.00905663185652444
+      ],
+      "best_ler": 0.013666666666666716,
+      "best_step": 250,
+      "best_ci": [
+        0.010090333246530282,
+        0.018486893613636774
+      ],
+      "final_ler": 0.013666666666666716,
+      "act_fraction": null,
+      "history": [
+        {
+          "step": 50,
+          "ler": 0.04533333333333334,
+          "per_log_mean": 0.9932499825954437,
+          "per_log_worst": 0.9733332991600037,
+          "act_fraction": null
+        },
+        {
+          "step": 100,
+          "ler": 0.08733333333333337,
+          "per_log_mean": 0.9896388749281565,
+          "per_log_worst": 0.9276666641235352,
+          "act_fraction": null
+        },
+        {
+          "step": 150,
+          "ler": 0.027000000000000024,
+          "per_log_mean": 0.9943888882795969,
+          "per_log_worst": 0.9853333234786987,
+          "act_fraction": null
+        },
+        {
+          "step": 200,
+          "ler": 0.014666666666666717,
+          "per_log_mean": 0.9957222094138464,
+          "per_log_worst": 0.9913333058357239,
+          "act_fraction": null
+        },
+        {
+          "step": 250,
+          "ler": 0.013666666666666716,
+          "per_log_mean": 0.9958055466413498,
+          "per_log_worst": 0.9919999837875366,
+          "act_fraction": null
+        },
+        {
+          "step": 300,
+          "ler": 0.013666666666666716,
+          "per_log_mean": 0.9958888838688532,
+          "per_log_worst": 0.9926666617393494,
+          "act_fraction": null
+        }
+      ],
+      "cfg": "gelu_cos",
+      "label": "GELU (ctrl)"
+    },
+    {
+      "name": "gelu",
+      "w_bits": 4,
+      "a_bits": 8,
+      "sparsity_thr": null,
+      "batch": 64,
+      "lr_schedule": "cosine",
+      "shots": 3000,
+      "steps": 300,
+      "baseline_ler": 0.009000000000000008,
+      "baseline_ci": [
+        0.006192754075494602,
+        0.013063075372775495
+      ],
+      "best_ler": 0.013000000000000012,
+      "best_step": 300,
+      "best_ci": [
+        0.009524410987561932,
+        0.017721187670905556
+      ],
+      "final_ler": 0.013000000000000012,
+      "act_fraction": null,
+      "history": [
+        {
+          "step": 50,
+          "ler": 0.026666666666666616,
+          "per_log_mean": 0.9950277755657831,
+          "per_log_worst": 0.984333336353302,
+          "act_fraction": null
+        },
+        {
+          "step": 100,
+          "ler": 0.024666666666666615,
+          "per_log_mean": 0.9952222108840942,
+          "per_log_worst": 0.9896666407585144,
+          "act_fraction": null
+        },
+        {
+          "step": 150,
+          "ler": 0.023666666666666614,
+          "per_log_mean": 0.9952777574459711,
+          "per_log_worst": 0.9906666278839111,
+          "act_fraction": null
+        },
+        {
+          "step": 200,
+          "ler": 0.01633333333333331,
+          "per_log_mean": 0.9955833206574122,
+          "per_log_worst": 0.9929999709129333,
+          "act_fraction": null
+        },
+        {
+          "step": 250,
+          "ler": 0.013333333333333308,
+          "per_log_mean": 0.9961388856172562,
+          "per_log_worst": 0.9943333268165588,
+          "act_fraction": null
+        },
+        {
+          "step": 300,
+          "ler": 0.013000000000000012,
+          "per_log_mean": 0.9961110999186834,
+          "per_log_worst": 0.9936666488647461,
+          "act_fraction": null
+        }
+      ],
+      "cfg": "gelu_w4a8_cos",
+      "label": "GELU W4A8"
+    },
+    {
+      "name": "relu",
+      "w_bits": 4,
+      "a_bits": 8,
+      "sparsity_thr": null,
+      "batch": 64,
+      "lr_schedule": "cosine",
+      "shots": 3000,
+      "steps": 300,
+      "baseline_ler": 0.9233333333333333,
+      "baseline_ci": [
+        0.9132619292829565,
+        0.9323219787962675
+      ],
+      "best_ler": 0.013333333333333308,
+      "best_step": 300,
+      "best_ci": [
+        0.009807054350147202,
+        0.01810435840917007
+      ],
+      "final_ler": 0.013333333333333308,
+      "act_fraction": null,
+      "history": [
+        {
+          "step": 50,
+          "ler": 0.08699999999999997,
+          "per_log_mean": 0.9871666431427002,
+          "per_log_worst": 0.9589999914169312,
+          "act_fraction": null
+        },
+        {
+          "step": 100,
+          "ler": 0.049000000000000044,
+          "per_log_mean": 0.9909722109635671,
+          "per_log_worst": 0.9806666374206543,
+          "act_fraction": null
+        },
+        {
+          "step": 150,
+          "ler": 0.03733333333333333,
+          "per_log_mean": 0.9938610941171646,
+          "per_log_worst": 0.9826666712760925,
+          "act_fraction": null
+        },
+        {
+          "step": 200,
+          "ler": 0.013666666666666716,
+          "per_log_mean": 0.9969444324572881,
+          "per_log_worst": 0.9943333268165588,
+          "act_fraction": null
+        },
+        {
+          "step": 250,
+          "ler": 0.01733333333333331,
+          "per_log_mean": 0.9960833191871643,
+          "per_log_worst": 0.9923332929611206,
+          "act_fraction": null
+        },
+        {
+          "step": 300,
+          "ler": 0.013333333333333308,
+          "per_log_mean": 0.9970277696847916,
+          "per_log_worst": 0.9943333268165588,
+          "act_fraction": null
+        }
+      ],
+      "cfg": "relu_w4a8_cos",
+      "label": "ReLU W4A8"
+    },
+    {
+      "name": "relu",
+      "w_bits": 4,
+      "a_bits": 4,
+      "sparsity_thr": null,
+      "batch": 64,
+      "lr_schedule": "cosine",
+      "shots": 3000,
+      "steps": 300,
+      "baseline_ler": 0.9383333333333334,
+      "baseline_ci": [
+        0.9291522498435664,
+        0.9463932927738979
+      ],
+      "best_ler": 0.021333333333333315,
+      "best_step": 250,
+      "best_ci": [
+        0.01674212993362851,
+        0.027148821246083546
+      ],
+      "final_ler": 0.02400000000000002,
+      "act_fraction": null,
+      "history": [
+        {
+          "step": 50,
+          "ler": 0.06633333333333336,
+          "per_log_mean": 0.9907499899466833,
+          "per_log_worst": 0.9636666774749756,
+          "act_fraction": null
+        },
+        {
+          "step": 100,
+          "ler": 0.04600000000000004,
+          "per_log_mean": 0.991944432258606,
+          "per_log_worst": 0.9806666374206543,
+          "act_fraction": null
+        },
+        {
+          "step": 150,
+          "ler": 0.04566666666666663,
+          "per_log_mean": 0.9926110953092575,
+          "per_log_worst": 0.9783332943916321,
+          "act_fraction": null
+        },
+        {
+          "step": 200,
+          "ler": 0.04266666666666663,
+          "per_log_mean": 0.9923610935608546,
+          "per_log_worst": 0.9779999852180481,
+          "act_fraction": null
+        },
+        {
+          "step": 250,
+          "ler": 0.021333333333333315,
+          "per_log_mean": 0.9950833171606064,
+          "per_log_worst": 0.9889999628067017,
+          "act_fraction": null
+        },
+        {
+          "step": 300,
+          "ler": 0.02400000000000002,
+          "per_log_mean": 0.9950555463631948,
+          "per_log_worst": 0.9893333315849304,
+          "act_fraction": null
+        }
+      ],
+      "cfg": "relu_w4a4_cos",
+      "label": "ReLU W4A4"
+    },
+    {
+      "name": "gelu",
+      "w_bits": 4,
+      "a_bits": 4,
+      "sparsity_thr": null,
+      "batch": 64,
+      "lr_schedule": "cosine",
+      "shots": 3000,
+      "steps": 300,
+      "baseline_ler": 0.3813333333333333,
+      "baseline_ci": [
+        0.3641148065775133,
+        0.39885537351996414
+      ],
+      "best_ler": 0.01533333333333331,
+      "best_step": 300,
+      "best_ci": [
+        0.011515523944774946,
+        0.020390773419641017
+      ],
+      "final_ler": 0.01533333333333331,
+      "act_fraction": null,
+      "history": [
+        {
+          "step": 50,
+          "ler": 0.05066666666666664,
+          "per_log_mean": 0.9934166620175043,
+          "per_log_worst": 0.9793333411216736,
+          "act_fraction": null
+        },
+        {
+          "step": 100,
+          "ler": 0.04600000000000004,
+          "per_log_mean": 0.9924444407224655,
+          "per_log_worst": 0.9816666841506958,
+          "act_fraction": null
+        },
+        {
+          "step": 150,
+          "ler": 0.026666666666666616,
+          "per_log_mean": 0.9955555399258932,
+          "per_log_worst": 0.9863333106040955,
+          "act_fraction": null
+        },
+        {
+          "step": 200,
+          "ler": 0.02633333333333332,
+          "per_log_mean": 0.9951110978921255,
+          "per_log_worst": 0.9889999628067017,
+          "act_fraction": null
+        },
+        {
+          "step": 250,
+          "ler": 0.017000000000000015,
+          "per_log_mean": 0.9966666450103124,
+          "per_log_worst": 0.9923332929611206,
+          "act_fraction": null
+        },
+        {
+          "step": 300,
+          "ler": 0.01533333333333331,
+          "per_log_mean": 0.9965833226839701,
+          "per_log_worst": 0.9929999709129333,
+          "act_fraction": null
+        }
+      ],
+      "cfg": "gelu_w4a4_cos",
+      "label": "GELU W4A4"
+    },
+    {
+      "name": "relu",
+      "w_bits": 4,
+      "a_bits": 8,
+      "sparsity_thr": 0.15,
+      "batch": 32,
+      "lr_schedule": "cosine",
+      "shots": 3000,
+      "steps": 300,
+      "baseline_ler": 0.921,
+      "baseline_ci": [
+        0.9108004647994692,
+        0.9301227445738065
+      ],
+      "best_ler": 0.013666666666666716,
+      "best_step": 300,
+      "best_ci": [
+        0.010090333246530282,
+        0.018486893613636774
+      ],
+      "final_ler": 0.013666666666666716,
+      "act_fraction": 0.1680604654040668,
+      "history": [
+        {
+          "step": 50,
+          "ler": 0.14633333333333332,
+          "per_log_mean": 0.9830833276112875,
+          "per_log_worst": 0.8889999985694885,
+          "act_fraction": 0.16657161775870377
+        },
+        {
+          "step": 100,
+          "ler": 0.04700000000000004,
+          "per_log_mean": 0.9932499875624975,
+          "per_log_worst": 0.9743333458900452,
+          "act_fraction": 0.16710575344464187
+        },
+        {
+          "step": 150,
+          "ler": 0.026666666666666616,
+          "per_log_mean": 0.9953610897064209,
+          "per_log_worst": 0.9879999756813049,
+          "act_fraction": 0.1641479724443167
+        },
+        {
+          "step": 200,
+          "ler": 0.023666666666666614,
+          "per_log_mean": 0.9956111013889313,
+          "per_log_worst": 0.9893333315849304,
+          "act_fraction": 0.16603302303613318
+        },
+        {
+          "step": 250,
+          "ler": 0.017000000000000015,
+          "per_log_mean": 0.996805543700854,
+          "per_log_worst": 0.9926666617393494,
+          "act_fraction": 0.16882011925602702
+        },
+        {
+          "step": 300,
+          "ler": 0.013666666666666716,
+          "per_log_mean": 0.9972499907016754,
+          "per_log_worst": 0.9933333396911621,
+          "act_fraction": 0.1680604654040668
+        }
+      ],
+      "cfg": "relu_w4a8_s015_cos",
+      "label": "ReLU W4A8 s=0.15"
+    },
+    {
+      "name": "relu",
+      "w_bits": 4,
+      "a_bits": 8,
+      "sparsity_thr": 0.2,
+      "batch": 32,
+      "lr_schedule": "cosine",
+      "shots": 3000,
+      "steps": 300,
+      "baseline_ler": 0.9339999999999999,
+      "baseline_ci": [
+        0.9245488345099825,
+        0.9423411247964347
+      ],
+      "best_ler": 0.020666666666666722,
+      "best_step": 250,
+      "best_ci": [
+        0.016155298848091637,
+        0.026404024129920857
+      ],
+      "final_ler": 0.02100000000000002,
+      "act_fraction": 0.1501293510740373,
+      "history": [
+        {
+          "step": 50,
+          "ler": 0.052000000000000046,
+          "per_log_mean": 0.9907777706782023,
+          "per_log_worst": 0.9816666841506958,
+          "act_fraction": 0.15138674496948742
+        },
+        {
+          "step": 100,
+          "ler": 0.06466666666666665,
+          "per_log_mean": 0.9895833233992258,
+          "per_log_worst": 0.9696666598320007,
+          "act_fraction": 0.1477261734717577
+        },
+        {
+          "step": 150,
+          "ler": 0.05233333333333334,
+          "per_log_mean": 0.99024997651577,
+          "per_log_worst": 0.9766666293144226,
+          "act_fraction": 0.15288953321691517
+        },
+        {
+          "step": 200,
+          "ler": 0.025000000000000022,
+          "per_log_mean": 0.993805542588234,
+          "per_log_worst": 0.9856666326522827,
+          "act_fraction": 0.15002293932973917
+        },
+        {
+          "step": 250,
+          "ler": 0.020666666666666722,
+          "per_log_mean": 0.9944166541099548,
+          "per_log_worst": 0.9906666278839111,
+          "act_fraction": 0.15039515126376116
+        },
+        {
+          "step": 300,
+          "ler": 0.02100000000000002,
+          "per_log_mean": 0.9944999913374583,
+          "per_log_worst": 0.9906666278839111,
+          "act_fraction": 0.1501293510740373
+        }
+      ],
+      "cfg": "relu_w4a8_s02_cos",
+      "label": "ReLU W4A8 s=0.20"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+[{"stream_name":"stdout","time":0.657513559,"data":"[    0.0s] pip install (No module named 'stim')\n"}
+,{"stream_name":"stdout","time":4.477141236,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 50.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":6.760184251,"data":"[    6.1s] experiments/ntu_qat.py \u003c- /kaggle/input/datasets/dalethhernandez/qecbb-data/experiments/ntu_qat.py\n"}
+,{"stream_name":"stdout","time":6.76814761,"data":"[    6.1s] ntu/transformer.py \u003c- /kaggle/input/datasets/dalethhernandez/qecbb-data/ntu/transformer.py\n"}
+,{"stream_name":"stdout","time":6.774443762,"data":"[    6.1s] ntu/baseline.py \u003c- /kaggle/input/datasets/dalethhernandez/qecbb-data/ntu/baseline.py\n"}
+,{"stream_name":"stdout","time":6.780054348,"data":"[    6.1s] ntu/README.md \u003c- /kaggle/input/datasets/dalethhernandez/qecbb-data/ntu/README.md\n"}
+,{"stream_name":"stdout","time":6.780100323,"data":"[    6.1s] === QAT relu act=relu w=None a=None sp=None batch=64 ===\n"}
+,{"stream_name":"stdout","time":19.536692293,"data":"[5.2s] model ready: replaced 40 Linear, K=12\n"}
+,{"stream_name":"stdout","time":20.38337238,"data":"[6.1s] eval set (3000, 432)\n"}
+,{"stream_name":"stdout","time":85.630150351,"data":"[71.3] baseline (target act/quant, no training) LER=9.4567e-01 act=None\n"}
+,{"stream_name":"stdout","time":869.000552059,"data":"[853.0] step 50 loss=0.0351\n"}
+,{"stream_name":"stderr","time":869.000616367,"data":"/kaggle/working/proj/experiments/ntu_qat.py:292: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\n"}
+,{"stream_name":"stderr","time":869.000654026,"data":"Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n"}
+,{"stream_name":"stderr","time":869.000661408,"data":"  float(loss)), flush=True)\n"}
+,{"stream_name":"stdout","time":941.4349391,"data":"[927.1] step 50 LER=5.4667e-02 mean=0.9914 worst=0.9793 act=None\n"}
+,{"stream_name":"stdout","time":1717.524306316,"data":"[1701.5] step 100 loss=0.0135\n"}
+,{"stream_name":"stdout","time":1789.804085378,"data":"[1775.5] step 100 LER=3.3667e-02 mean=0.9922 worst=0.9833 act=None\n"}
+,{"stream_name":"stdout","time":2567.353788487,"data":"[2551.3] step 150 loss=0.0429\n"}
+,{"stream_name":"stdout","time":2639.769675989,"data":"[2625.5] step 150 LER=4.3000e-02 mean=0.9921 worst=0.9790 act=None\n"}
+,{"stream_name":"stdout","time":3416.642691533,"data":"[3400.6] step 200 loss=0.0300\n"}
+,{"stream_name":"stdout","time":3488.961333652,"data":"[3474.7] step 200 LER=9.5667e-02 mean=0.9868 worst=0.9500 act=None\n"}
+,{"stream_name":"stdout","time":4265.325811564,"data":"[4249.3] step 250 loss=0.0051\n"}
+,{"stream_name":"stdout","time":4337.590004208,"data":"[4323.3] step 250 LER=4.6000e-02 mean=0.9909 worst=0.9763 act=None\n"}
+,{"stream_name":"stdout","time":5114.370344721,"data":"[5098.3] step 300 loss=0.0253\n"}
+,{"stream_name":"stdout","time":5186.678043081,"data":"[5172.4] step 300 LER=1.0867e-01 mean=0.9865 worst=0.9227 act=None\n"}
+,{"stream_name":"stdout","time":5186.678922701,"data":"-\u003e /kaggle/working/ntu_qat_relu.json\n"}
+,{"stream_name":"stdout","time":5186.816783082,"data":"-\u003e /kaggle/working/ntu_qat_relu.pt\n"}
+,{"stream_name":"stdout","time":5190.32992121,"data":"[ 5189.7s] relu batch=64 rc=0 file_out=True\n"}
+,{"stream_name":"stdout","time":5190.33005835,"data":"[ 5189.7s] === QAT relu_w4a8 act=relu w=4 a=8 sp=None batch=64 ===\n"}
+,{"stream_name":"stderr","time":5193.914651804,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":5194.539878741,"data":"[2.4s] model ready: replaced 40 Linear, K=12\n"}
+,{"stream_name":"stdout","time":5194.905469126,"data":"[2.8s] eval set (3000, 432)\n"}
+,{"stream_name":"stdout","time":5270.560600797,"data":"[78.4] baseline (target act/quant, no training) LER=9.2967e-01 act=None\n"}
+,{"stream_name":"stdout","time":6052.037135277,"data":"[858.2] step 50 loss=0.0141\n"}
+,{"stream_name":"stderr","time":6052.037190285,"data":"/kaggle/working/proj/experiments/ntu_qat.py:292: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\n"}
+,{"stream_name":"stderr","time":6052.037216846,"data":"Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n"}
+,{"stream_name":"stderr","time":6052.037222371,"data":"  float(loss)), flush=True)\n"}
+,{"stream_name":"stdout","time":6126.975770396,"data":"[934.9] step 50 LER=7.1000e-02 mean=0.9904 worst=0.9540 act=None\n"}
+,{"stream_name":"stdout","time":6903.588800235,"data":"[1709.8] step 100 loss=0.0040\n"}
+,{"stream_name":"stdout","time":6978.54440334,"data":"[1786.4] step 100 LER=5.4667e-02 mean=0.9917 worst=0.9657 act=None\n"}
+,{"stream_name":"stdout","time":7759.816053915,"data":"[2566.0] step 150 loss=0.0424\n"}
+,{"stream_name":"stdout","time":7834.556032647,"data":"[2642.4] step 150 LER=4.7333e-02 mean=0.9919 worst=0.9780 act=None\n"}
+,{"stream_name":"stdout","time":8614.513860475,"data":"[3420.7] step 200 loss=0.0332\n"}
+,{"stream_name":"stdout","time":8689.187174352,"data":"[3497.1] step 200 LER=6.9667e-02 mean=0.9896 worst=0.9717 act=None\n"}
+,{"stream_name":"stdout","time":9469.119870067,"data":"[4275.3] step 250 loss=0.0213\n"}
+,{"stream_name":"stdout","time":9543.818509068,"data":"[4351.7] step 250 LER=4.4000e-02 mean=0.9922 worst=0.9827 act=None\n"}
+,{"stream_name":"stdout","time":10323.351949541,"data":"[5129.5] step 300 loss=0.0176\n"}
+,{"stream_name":"stdout","time":10398.139877971,"data":"[5206.0] step 300 LER=5.0333e-02 mean=0.9913 worst=0.9797 act=None\n"}
+,{"stream_name":"stdout","time":10398.140755553,"data":"-\u003e /kaggle/working/ntu_qat_relu_w4a8.json\n"}
+,{"stream_name":"stdout","time":10399.046099837,"data":"[10398.4s] relu_w4a8 batch=64 rc=0 file_out=True\n"}
+,{"stream_name":"stdout","time":10399.046166122,"data":"[10398.4s] === QAT relu_w4a8_s01 act=relu w=4 a=8 sp=0.1 batch=64 ===\n"}
+,{"stream_name":"stderr","time":10402.534985067,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":10403.159731984,"data":"[2.4s] model ready: replaced 40 Linear, K=12\n"}
+,{"stream_name":"stdout","time":10403.529350062,"data":"[2.8s] eval set (3000, 432)\n"}
+,{"stream_name":"stdout","time":10479.679040306,"data":"[78.9] baseline (target act/quant, no training) LER=9.2167e-01 act=0.19681007301900433\n"}
+,{"stream_name":"stderr","time":10482.657656248,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":10482.658696177,"data":"  File \"/kaggle/working/proj/experiments/ntu_qat.py\", line 356, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":10482.658717985,"data":"    main()\n"}
+,{"stream_name":"stderr","time":10482.658723464,"data":"    ~~~~^^\n"}
+,{"stream_name":"stderr","time":10482.658728088,"data":"  File \"/kaggle/working/proj/experiments/ntu_qat.py\", line 352, in main\n"}
+,{"stream_name":"stderr","time":10482.658733404,"data":"    train(args)\n"}
+,{"stream_name":"stderr","time":10482.658738636,"data":"    ~~~~~^^^^^^\n"}
+,{"stream_name":"stderr","time":10482.658743388,"data":"  File \"/kaggle/working/proj/experiments/ntu_qat.py\", line 285, in train\n"}
+,{"stream_name":"stderr","time":10482.65875976,"data":"    loss.backward()\n"}
+,{"stream_name":"stderr","time":10482.658763372,"data":"    ~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":10482.658766795,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/_tensor.py\", line 631, in backward\n"}
+,{"stream_name":"stderr","time":10482.658770517,"data":"    torch.autograd.backward(\n"}
+,{"stream_name":"stderr","time":10482.658774065,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":10482.658777588,"data":"        self, gradient, retain_graph, create_graph, inputs=inputs\n"}
+,{"stream_name":"stderr","time":10482.658781403,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":10482.658784816,"data":"    )\n"}
+,{"stream_name":"stderr","time":10482.658788276,"data":"    ^\n"}
+,{"stream_name":"stderr","time":10482.65879197,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/autograd/__init__.py\", line 381, in backward\n"}
+,{"stream_name":"stderr","time":10482.658796155,"data":"    _engine_run_backward(\n"}
+,{"stream_name":"stderr","time":10482.658800102,"data":"    ~~~~~~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":10482.658803702,"data":"        tensors,\n"}
+,{"stream_name":"stderr","time":10482.658807349,"data":"        ^^^^^^^^\n"}
+,{"stream_name":"stderr","time":10482.658811307,"data":"    ...\u003c5 lines\u003e...\n"}
+,{"stream_name":"stderr","time":10482.65881546,"data":"        accumulate_grad=True,\n"}
+,{"stream_name":"stderr","time":10482.658819217,"data":"        ^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":10482.658822957,"data":"    )\n"}
+,{"stream_name":"stderr","time":10482.658826693,"data":"    ^\n"}
+,{"stream_name":"stderr","time":10482.658830253,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/autograd/graph.py\", line 869, in _engine_run_backward\n"}
+,{"stream_name":"stderr","time":10482.658834386,"data":"    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass\n"}
+,{"stream_name":"stderr","time":10482.658838536,"data":"           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":10482.658842444,"data":"        t_outputs, *args, **kwargs\n"}
+,{"stream_name":"stderr","time":10482.658846234,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":10482.658849809,"data":"    )  # Calls into the C++ engine to run the backward pass\n"}
+,{"stream_name":"stderr","time":10482.658853667,"data":"    ^\n"}
+,{"stream_name":"stderr","time":10482.658860486,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 324.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 206.81 MiB is free. Including non-PyTorch memory, this process has 14.36 GiB memory in use. Of the allocated memory 14.02 GiB is allocated by PyTorch, and 204.42 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stdout","time":10483.522437126,"data":"[10482.9s] relu_w4a8_s01 batch=64 rc=1 file_out=False\n"}
+,{"stream_name":"stdout","time":10483.522467229,"data":"[10482.9s] relu_w4a8_s01 failed at batch=64, retrying smaller\n"}
+,{"stream_name":"stdout","time":10485.068766584,"data":"[10484.4s] === QAT relu_w4a8_s01 act=relu w=4 a=8 sp=0.1 batch=32 ===\n"}
+,{"stream_name":"stderr","time":10488.370298971,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":10488.973085661,"data":"[2.3s] model ready: replaced 40 Linear, K=12\n"}
+,{"stream_name":"stdout","time":10489.33218505,"data":"[2.7s] eval set (3000, 432)\n"}
+,{"stream_name":"stdout","time":10565.786905067,"data":"[79.1] baseline (target act/quant, no training) LER=9.2500e-01 act=0.1967963616786859\n"}
+,{"stream_name":"stderr","time":10923.593346377,"data":"/kaggle/working/proj/experiments/ntu_qat.py:292: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\n"}
+,{"stream_name":"stderr","time":10923.593426676,"data":"Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n"}
+,{"stream_name":"stderr","time":10923.593431325,"data":"  float(loss)), flush=True)\n"}
+,{"stream_name":"stdout","time":10923.593346375,"data":"[436.2] step 50 loss=0.0143\n"}
+,{"stream_name":"stdout","time":10999.204686195,"data":"[512.6] step 50 LER=1.7900e-01 mean=0.9710 worst=0.9080 act=0.17730307277876486\n"}
+,{"stream_name":"stdout","time":11354.505416773,"data":"[867.1] step 100 loss=0.0295\n"}
+,{"stream_name":"stdout","time":11430.34347752,"data":"[943.7] step 100 LER=7.8000e-02 mean=0.9879 worst=0.9737 act=0.1805160622938731\n"}
+,{"stream_name":"stdout","time":11785.316860938,"data":"[1297.9] step 150 loss=0.0077\n"}
+,{"stream_name":"stdout","time":11861.085103589,"data":"[1374.4] step 150 LER=5.3667e-02 mean=0.9906 worst=0.9727 act=0.18478227600755412\n"}
+,{"stream_name":"stdout","time":12215.644078979,"data":"[1728.2] step 200 loss=0.0340\n"}
+,{"stream_name":"stdout","time":12291.468179371,"data":"[1804.8] step 200 LER=1.0033e-01 mean=0.9820 worst=0.9430 act=0.1780777725338803\n"}
+,{"stream_name":"stdout","time":12647.702644083,"data":"[2160.3] step 250 loss=0.0150\n"}
+,{"stream_name":"stdout","time":12723.210344811,"data":"[2236.6] step 250 LER=6.6333e-02 mean=0.9893 worst=0.9670 act=0.17799158281874186\n"}
+,{"stream_name":"stdout","time":13077.796576097,"data":"[2590.4] step 300 loss=0.1567\n"}
+,{"stream_name":"stdout","time":13153.664590063,"data":"[2667.0] step 300 LER=3.0100e-01 mean=0.9634 worst=0.8527 act=0.1723015776329083\n"}
+,{"stream_name":"stdout","time":13153.665301544,"data":"-\u003e /kaggle/working/ntu_qat_relu_w4a8_s01.json\n"}
+,{"stream_name":"stdout","time":13153.793408605,"data":"-\u003e /kaggle/working/ntu_qat_relu_w4a8_s01.pt\n"}
+,{"stream_name":"stdout","time":13154.659801421,"data":"[13154.0s] relu_w4a8_s01 batch=32 rc=0 file_out=True\n"}
+,{"stream_name":"stdout","time":13154.659947451,"data":"[13154.0s] === QAT gelu_w4a8 act=gelu w=4 a=8 sp=None batch=64 ===\n"}
+,{"stream_name":"stdout","time":13158.680216861,"data":"[2.3s] model ready: replaced 40 Linear, K=12\n"}
+,{"stream_name":"stdout","time":13159.035275956,"data":"[2.7s] eval set (3000, 432)\n"}
+,{"stream_name":"stdout","time":13234.391707427,"data":"[78.1] baseline (target act/quant, no training) LER=8.0400e-01 act=None\n"}
+,{"stream_name":"stderr","time":14015.182807627,"data":"/kaggle/working/proj/experiments/ntu_qat.py:292: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\n"}
+,{"stream_name":"stderr","time":14015.182854072,"data":"Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n"}
+,{"stream_name":"stderr","time":14015.182860656,"data":"  float(loss)), flush=True)\n"}
+,{"stream_name":"stdout","time":14015.182896785,"data":"[857.1] step 50 loss=0.0006\n"}
+,{"stream_name":"stdout","time":14090.263131145,"data":"[933.9] step 50 LER=2.6000e-02 mean=0.9949 worst=0.9890 act=None\n"}
+,{"stream_name":"stdout","time":14869.211097335,"data":"[1711.2] step 100 loss=0.0184\n"}
+,{"stream_name":"stdout","time":14944.192656658,"data":"[1787.9] step 100 LER=2.7667e-02 mean=0.9947 worst=0.9900 act=None\n"}
+,{"stream_name":"stdout","time":15723.41776123,"data":"[2565.4] step 150 loss=0.0204\n"}
+,{"stream_name":"stdout","time":15798.565191366,"data":"[2642.2] step 150 LER=4.5667e-02 mean=0.9934 worst=0.9783 act=None\n"}
+,{"stream_name":"stdout","time":16577.453225481,"data":"[3419.4] step 200 loss=0.0255\n"}
+,{"stream_name":"stdout","time":16652.66774587,"data":"[3496.3] step 200 LER=3.1333e-02 mean=0.9941 worst=0.9823 act=None\n"}
+,{"stream_name":"stdout","time":17432.462901654,"data":"[4274.4] step 250 loss=0.0080\n"}
+,{"stream_name":"stdout","time":17507.684594749,"data":"[4351.4] step 250 LER=2.3667e-02 mean=0.9954 worst=0.9907 act=None\n"}
+,{"stream_name":"stdout","time":18287.212874207,"data":"[5129.2] step 300 loss=0.0276\n"}
+,{"stream_name":"stdout","time":18362.490510875,"data":"[5206.2] step 300 LER=3.9333e-02 mean=0.9924 worst=0.9733 act=None\n"}
+,{"stream_name":"stdout","time":18362.491418669,"data":"-\u003e /kaggle/working/ntu_qat_gelu_w4a8.json\n"}
+,{"stream_name":"stdout","time":18363.601259694,"data":"[18362.9s] gelu_w4a8 batch=64 rc=0 file_out=True\n"}
+,{"stream_name":"stdout","time":18363.601399841,"data":"[18362.9s] === QAT lif act=lif w=None a=None sp=None batch=64 ===\n"}
+,{"stream_name":"stderr","time":18367.153595995,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":18367.772472395,"data":"[2.5s] model ready: replaced 40 Linear, K=12\n"}
+,{"stream_name":"stdout","time":18368.13083455,"data":"[2.8s] eval set (3000, 432)\n"}
+,{"stream_name":"stdout","time":18442.212719241,"data":"[76.9] baseline (target act/quant, no training) LER=9.9033e-01 act=None\n"}
+,{"stream_name":"stderr","time":18460.805222538,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":18460.806233728,"data":"  File \"/kaggle/working/proj/experiments/ntu_qat.py\", line 356, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":18460.806247968,"data":"    main()\n"}
+,{"stream_name":"stderr","time":18460.806252738,"data":"    ~~~~^^\n"}
+,{"stream_name":"stderr","time":18460.806261736,"data":"  File \"/kaggle/working/proj/experiments/ntu_qat.py\", line 352, in main\n"}
+,{"stream_name":"stderr","time":18460.806278838,"data":"    train(args)\n"}
+,{"stream_name":"stderr","time":18460.80628376,"data":"    ~~~~~^^^^^^\n"}
+,{"stream_name":"stderr","time":18460.806288903,"data":"  File \"/kaggle/working/proj/experiments/ntu_qat.py\", line 285, in train\n"}
+,{"stream_name":"stderr","time":18460.806293939,"data":"    loss.backward()\n"}
+,{"stream_name":"stderr","time":18460.80629865,"data":"    ~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":18460.806302841,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/_tensor.py\", line 631, in backward\n"}
+,{"stream_name":"stderr","time":18460.806307233,"data":"    torch.autograd.backward(\n"}
+,{"stream_name":"stderr","time":18460.80631142,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":18460.806315597,"data":"        self, gradient, retain_graph, create_graph, inputs=inputs\n"}
+,{"stream_name":"stderr","time":18460.806319771,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":18460.806325646,"data":"    )\n"}
+,{"stream_name":"stderr","time":18460.806332748,"data":"    ^\n"}
+,{"stream_name":"stderr","time":18460.806335496,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/autograd/__init__.py\", line 381, in backward\n"}
+,{"stream_name":"stderr","time":18460.806348568,"data":"    _engine_run_backward(\n"}
+,{"stream_name":"stderr","time":18460.806350985,"data":"    ~~~~~~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":18460.80638302,"data":"        tensors,\n"}
+,{"stream_name":"stderr","time":18460.806386868,"data":"        ^^^^^^^^\n"}
+,{"stream_name":"stderr","time":18460.806390718,"data":"    ...\u003c5 lines\u003e...\n"}
+,{"stream_name":"stderr","time":18460.806394153,"data":"        accumulate_grad=True,\n"}
+,{"stream_name":"stderr","time":18460.806397404,"data":"        ^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":18460.806400777,"data":"    )\n"}
+,{"stream_name":"stderr","time":18460.806404081,"data":"    ^\n"}
+,{"stream_name":"stderr","time":18460.806407316,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/autograd/graph.py\", line 869, in _engine_run_backward\n"}
+,{"stream_name":"stderr","time":18460.806410911,"data":"    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass\n"}
+,{"stream_name":"stderr","time":18460.806414425,"data":"           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":18460.806417962,"data":"        t_outputs, *args, **kwargs\n"}
+,{"stream_name":"stderr","time":18460.806422016,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":18460.806425365,"data":"    )  # Calls into the C++ engine to run the backward pass\n"}
+,{"stream_name":"stderr","time":18460.806428792,"data":"    ^\n"}
+,{"stream_name":"stderr","time":18460.806435448,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 324.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 42.81 MiB is free. Including non-PyTorch memory, this process has 14.52 GiB memory in use. Of the allocated memory 14.20 GiB is allocated by PyTorch, and 190.95 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stdout","time":18461.784686547,"data":"[18461.1s] lif batch=64 rc=1 file_out=False\n"}
+,{"stream_name":"stdout","time":18461.784724021,"data":"[18461.1s] lif failed at batch=64, retrying smaller\n"}
+,{"stream_name":"stdout","time":18461.784911089,"data":"[18461.1s] === QAT lif act=lif w=None a=None sp=None batch=32 ===\n"}
+,{"stream_name":"stdout","time":18465.975491537,"data":"[2.5s] model ready: replaced 40 Linear, K=12\n"}
+,{"stream_name":"stdout","time":18466.373987341,"data":"[2.9s] eval set (3000, 432)\n"}
+,{"stream_name":"stdout","time":18540.885315131,"data":"[77.4] baseline (target act/quant, no training) LER=9.8867e-01 act=None\n"}
+,{"stream_name":"stderr","time":18899.110994489,"data":"/kaggle/working/proj/experiments/ntu_qat.py:292: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\n"}
+,{"stream_name":"stderr","time":18899.111087993,"data":"Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n"}
+,{"stream_name":"stderr","time":18899.111096087,"data":"  float(loss)), flush=True)\n"}
+,{"stream_name":"stdout","time":18899.110994487,"data":"[434.8] step 50 loss=0.0564\n"}
+,{"stream_name":"stdout","time":18972.783326501,"data":"[509.3] step 50 LER=4.2000e-02 mean=0.9897 worst=0.9813 act=None\n"}
+,{"stream_name":"stdout","time":19328.333769945,"data":"[864.1] step 100 loss=0.0453\n"}
+,{"stream_name":"stdout","time":19402.194701925,"data":"[938.7] step 100 LER=1.1967e-01 mean=0.9855 worst=0.9283 act=None\n"}
+,{"stream_name":"stdout","time":19757.838136653,"data":"[1293.6] step 150 loss=0.0438\n"}
+,{"stream_name":"stdout","time":19831.608058091,"data":"[1368.1] step 150 LER=3.9000e-02 mean=0.9928 worst=0.9817 act=None\n"}
+,{"stream_name":"stdout","time":20188.072454883,"data":"[1723.8] step 200 loss=0.0457\n"}
+,{"stream_name":"stdout","time":20261.882401788,"data":"[1798.4] step 200 LER=5.9000e-02 mean=0.9907 worst=0.9677 act=None\n"}
+,{"stream_name":"stdout","time":20617.697809075,"data":"[2153.4] step 250 loss=0.0499\n"}
+,{"stream_name":"stdout","time":20691.453979198,"data":"[2228.0] step 250 LER=7.9333e-02 mean=0.9837 worst=0.9477 act=None\n"}
+,{"stream_name":"stdout","time":21046.868322952,"data":"[2582.6] step 300 loss=0.0401\n"}
+,{"stream_name":"stdout","time":21120.828239223,"data":"[2657.3] step 300 LER=4.1000e-02 mean=0.9919 worst=0.9800 act=None\n"}
+,{"stream_name":"stdout","time":21120.829093395,"data":"-\u003e /kaggle/working/ntu_qat_lif.json\n"}
+,{"stream_name":"stdout","time":21121.779654344,"data":"[21121.1s] lif batch=32 rc=0 file_out=True\n"}
+,{"stream_name":"stdout","time":21121.779688881,"data":"[21121.1s] FIN total=352.0min\n"}
+,{"stream_name":"stderr","time":21124.404532037,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":21124.404560919,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":21124.714924393,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":21124.714953164,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":21125.556106153,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":21126.613829839,"data":"[NbConvertApp] Writing 294033 bytes to __results__.html\n"}
+]

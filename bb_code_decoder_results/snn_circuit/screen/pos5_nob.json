@@ -1,0 +1,258 @@
+{
+  "generated_utc": "2026-10-14T23:03:45.111910+00:00",
+  "device": "cuda",
+  "variant": "uncorrelated",
+  "n_checks": 36,
+  "n_edges": 432,
+  "n_params": 36492,
+  "config": {
+    "variant": "uncorrelated",
+    "p_train": 0.003,
+    "p_train_min": 0.002,
+    "p_train_max": 0.004,
+    "p_eval": "0.003",
+    "n_train": 40000,
+    "n_eval": 4000,
+    "steps": 2500,
+    "batch_size": 128,
+    "eval_batch_size": 256,
+    "lr": 0.002,
+    "weight_decay": 0.0001,
+    "pos_weight": 5.0,
+    "balance": false,
+    "lr_patience": 2,
+    "lr_factor": 0.5,
+    "hidden": 64,
+    "num_layers": 4,
+    "num_steps": 30,
+    "beta": 0.9,
+    "spiking": true,
+    "eval_every": 250,
+    "ckpt_every": 500,
+    "log_every": 20,
+    "early_stop_patience": 0,
+    "max_wall_minutes": 25.0,
+    "target_metric": "mean_ler",
+    "resume": null,
+    "seed": 42,
+    "device": "auto",
+    "ref_shots": 3000,
+    "ref_osd_order": 3,
+    "smoke": false,
+    "out": "/kaggle/working/screen/pos5_nob"
+  },
+  "p_evals": [
+    0.003
+  ],
+  "p_train_grid": [
+    0.002,
+    0.0025,
+    0.003,
+    0.0035,
+    0.004
+  ],
+  "ref": {
+    "0.003": {
+      "ler": 0.012,
+      "shots": 3000,
+      "osd_order": 3
+    }
+  },
+  "best_metric": 0.97425,
+  "target_metric": "mean_ler",
+  "stopped_reason": null,
+  "final_step": 2500,
+  "elapsed_min": 14.65735860268275,
+  "history": [
+    {
+      "step": 250,
+      "elapsed_s": 91.75173735618591,
+      "metrics": {
+        "0.003": {
+          "ler": 0.999,
+          "ci_lo": 0.9974313811879697,
+          "ci_hi": 0.9996110592522315,
+          "k_fail": 3996,
+          "n": 4000,
+          "ler_best_thr": 0.97375,
+          "best_thr": 2.0,
+          "mean_spike_rate": 0.3770663764476776,
+          "ref_ler": 0.012,
+          "ratio_snn_over_ref": 83.25
+        }
+      },
+      "target": 0.999
+    },
+    {
+      "step": 500,
+      "elapsed_s": 182.6198160648346,
+      "metrics": {
+        "0.003": {
+          "ler": 0.996,
+          "ci_lo": 0.9935118748856361,
+          "ci_hi": 0.997536322425666,
+          "k_fail": 3984,
+          "n": 4000,
+          "ler_best_thr": 0.97225,
+          "best_thr": 2.0,
+          "mean_spike_rate": 0.3685372350215912,
+          "ref_ler": 0.012,
+          "ratio_snn_over_ref": 83.0
+        }
+      },
+      "target": 0.996
+    },
+    {
+      "step": 750,
+      "elapsed_s": 272.06248331069946,
+      "metrics": {
+        "0.003": {
+          "ler": 0.9915,
+          "ci_lo": 0.988145945797788,
+          "ci_hi": 0.9939108868201657,
+          "k_fail": 3966,
+          "n": 4000,
+          "ler_best_thr": 0.97375,
+          "best_thr": 1.5500000000000003,
+          "mean_spike_rate": 0.36185514640808103,
+          "ref_ler": 0.012,
+          "ratio_snn_over_ref": 82.625
+        }
+      },
+      "target": 0.9915
+    },
+    {
+      "step": 1000,
+      "elapsed_s": 358.3345398902893,
+      "metrics": {
+        "0.003": {
+          "ler": 0.98425,
+          "ci_lo": 0.9799008320550072,
+          "ci_hi": 0.9876699130014405,
+          "k_fail": 3937,
+          "n": 4000,
+          "ler_best_thr": 0.971,
+          "best_thr": 1.2000000000000002,
+          "mean_spike_rate": 0.34925795555114747,
+          "ref_ler": 0.012,
+          "ratio_snn_over_ref": 82.02083333333333
+        }
+      },
+      "target": 0.98425
+    },
+    {
+      "step": 1250,
+      "elapsed_s": 447.44132804870605,
+      "metrics": {
+        "0.003": {
+          "ler": 0.98075,
+          "ci_lo": 0.9760077046513187,
+          "ci_hi": 0.9845697567547469,
+          "k_fail": 3923,
+          "n": 4000,
+          "ler_best_thr": 0.96725,
+          "best_thr": 1.25,
+          "mean_spike_rate": 0.34748427200317383,
+          "ref_ler": 0.012,
+          "ratio_snn_over_ref": 81.72916666666667
+        }
+      },
+      "target": 0.98075
+    },
+    {
+      "step": 1500,
+      "elapsed_s": 536.4682290554047,
+      "metrics": {
+        "0.003": {
+          "ler": 0.98225,
+          "ci_lo": 0.9776711589384143,
+          "ci_hi": 0.9859034240321006,
+          "k_fail": 3929,
+          "n": 4000,
+          "ler_best_thr": 0.962,
+          "best_thr": 1.4500000000000002,
+          "mean_spike_rate": 0.3349544367790222,
+          "ref_ler": 0.012,
+          "ratio_snn_over_ref": 81.85416666666666
+        }
+      },
+      "target": 0.98225
+    },
+    {
+      "step": 1750,
+      "elapsed_s": 625.1910121440887,
+      "metrics": {
+        "0.003": {
+          "ler": 0.98175,
+          "ci_lo": 0.9771158925038956,
+          "ci_hi": 0.9854596499451362,
+          "k_fail": 3927,
+          "n": 4000,
+          "ler_best_thr": 0.963,
+          "best_thr": 1.4500000000000002,
+          "mean_spike_rate": 0.32863421297073364,
+          "ref_ler": 0.012,
+          "ratio_snn_over_ref": 81.8125
+        }
+      },
+      "target": 0.98175
+    },
+    {
+      "step": 2000,
+      "elapsed_s": 710.2385785579681,
+      "metrics": {
+        "0.003": {
+          "ler": 0.98675,
+          "ci_lo": 0.9827104739589326,
+          "ci_hi": 0.9898554737049309,
+          "k_fail": 3947,
+          "n": 4000,
+          "ler_best_thr": 0.959,
+          "best_thr": 1.5,
+          "mean_spike_rate": 0.32435320782661436,
+          "ref_ler": 0.012,
+          "ratio_snn_over_ref": 82.22916666666667
+        }
+      },
+      "target": 0.98675
+    },
+    {
+      "step": 2250,
+      "elapsed_s": 795.363865852356,
+      "metrics": {
+        "0.003": {
+          "ler": 0.97425,
+          "ci_lo": 0.9688677538686294,
+          "ci_hi": 0.9787221807581548,
+          "k_fail": 3897,
+          "n": 4000,
+          "ler_best_thr": 0.95325,
+          "best_thr": 1.3000000000000003,
+          "mean_spike_rate": 0.3212418899536133,
+          "ref_ler": 0.012,
+          "ratio_snn_over_ref": 81.1875
+        }
+      },
+      "target": 0.97425
+    },
+    {
+      "step": 2500,
+      "elapsed_s": 879.4203472137451,
+      "metrics": {
+        "0.003": {
+          "ler": 0.9835,
+          "ci_lo": 0.9790630092023143,
+          "ci_hi": 0.9870091750719088,
+          "k_fail": 3934,
+          "n": 4000,
+          "ler_best_thr": 0.952,
+          "best_thr": 1.5500000000000003,
+          "mean_spike_rate": 0.3171816303730011,
+          "ref_ler": 0.012,
+          "ratio_snn_over_ref": 81.95833333333333
+        }
+      },
+      "target": 0.9835
+    }
+  ]
+}

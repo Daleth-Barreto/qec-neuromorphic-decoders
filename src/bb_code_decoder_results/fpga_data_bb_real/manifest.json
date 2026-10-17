@@ -1,0 +1,475 @@
+{
+  "format": "Q8.8",
+  "data_width": 16,
+  "fractional_width": 8,
+  "scale": 256,
+  "code": "[[72,12,6]]",
+  "n_qubits": 72,
+  "n_checks_z": 36,
+  "k_logical": 12,
+  "rounds": 8,
+  "hidden_channels": 64,
+  "readout_hidden": 128,
+  "num_layers": 4,
+  "num_steps": 30,
+  "beta": 0.9,
+  "lif_threshold": 1.0,
+  "parameters": {
+    "input_proj.weight": {
+      "file": "input_proj_weight.mem",
+      "shape": [
+        64,
+        8
+      ],
+      "num_values": 512,
+      "min": -90,
+      "max": 90
+    },
+    "pe_input.weight": {
+      "file": "pe_input_weight.mem",
+      "shape": [
+        64,
+        64
+      ],
+      "num_values": 4096,
+      "min": -32,
+      "max": 32
+    },
+    "pe_readout.weight": {
+      "file": "pe_readout_weight.mem",
+      "shape": [
+        64,
+        64
+      ],
+      "num_values": 4096,
+      "min": -32,
+      "max": 32
+    },
+    "pe_readout.bias": {
+      "file": "pe_readout_bias.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": -32,
+      "max": 32
+    },
+    "conv1.att_src": {
+      "file": "conv1_att_src.mem",
+      "shape": [
+        1,
+        2,
+        32
+      ],
+      "num_values": 64,
+      "min": -107,
+      "max": 102
+    },
+    "conv1.att_dst": {
+      "file": "conv1_att_dst.mem",
+      "shape": [
+        1,
+        2,
+        32
+      ],
+      "num_values": 64,
+      "min": -103,
+      "max": 105
+    },
+    "conv1.bias": {
+      "file": "conv1_bias.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 0,
+      "max": 0
+    },
+    "conv1.lin.weight": {
+      "file": "conv1_lin_weight.mem",
+      "shape": [
+        64,
+        64
+      ],
+      "num_values": 4096,
+      "min": -55,
+      "max": 55
+    },
+    "bn1.weight": {
+      "file": "bn1_weight.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 256,
+      "max": 256
+    },
+    "bn1.bias": {
+      "file": "bn1_bias.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 0,
+      "max": 0
+    },
+    "bn1.running_mean": {
+      "file": "bn1_running_mean.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 0,
+      "max": 0
+    },
+    "bn1.running_var": {
+      "file": "bn1_running_var.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 256,
+      "max": 256
+    },
+    "bn1.num_batches_tracked": {
+      "file": "bn1_num_batches_tracked.mem",
+      "shape": [],
+      "num_values": 1,
+      "min": 0,
+      "max": 0
+    },
+    "layers.0.att_src": {
+      "file": "layers_0_att_src.mem",
+      "shape": [
+        1,
+        2,
+        32
+      ],
+      "num_values": 64,
+      "min": -106,
+      "max": 107
+    },
+    "layers.0.att_dst": {
+      "file": "layers_0_att_dst.mem",
+      "shape": [
+        1,
+        2,
+        32
+      ],
+      "num_values": 64,
+      "min": -107,
+      "max": 105
+    },
+    "layers.0.bias": {
+      "file": "layers_0_bias.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 0,
+      "max": 0
+    },
+    "layers.0.lin.weight": {
+      "file": "layers_0_lin_weight.mem",
+      "shape": [
+        64,
+        64
+      ],
+      "num_values": 4096,
+      "min": -55,
+      "max": 55
+    },
+    "layers.1.att_src": {
+      "file": "layers_1_att_src.mem",
+      "shape": [
+        1,
+        2,
+        32
+      ],
+      "num_values": 64,
+      "min": -105,
+      "max": 107
+    },
+    "layers.1.att_dst": {
+      "file": "layers_1_att_dst.mem",
+      "shape": [
+        1,
+        2,
+        32
+      ],
+      "num_values": 64,
+      "min": -107,
+      "max": 105
+    },
+    "layers.1.bias": {
+      "file": "layers_1_bias.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 0,
+      "max": 0
+    },
+    "layers.1.lin.weight": {
+      "file": "layers_1_lin_weight.mem",
+      "shape": [
+        64,
+        64
+      ],
+      "num_values": 4096,
+      "min": -55,
+      "max": 55
+    },
+    "layers.2.att_src": {
+      "file": "layers_2_att_src.mem",
+      "shape": [
+        1,
+        2,
+        32
+      ],
+      "num_values": 64,
+      "min": -97,
+      "max": 105
+    },
+    "layers.2.att_dst": {
+      "file": "layers_2_att_dst.mem",
+      "shape": [
+        1,
+        2,
+        32
+      ],
+      "num_values": 64,
+      "min": -102,
+      "max": 103
+    },
+    "layers.2.bias": {
+      "file": "layers_2_bias.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 0,
+      "max": 0
+    },
+    "layers.2.lin.weight": {
+      "file": "layers_2_lin_weight.mem",
+      "shape": [
+        64,
+        64
+      ],
+      "num_values": 4096,
+      "min": -55,
+      "max": 55
+    },
+    "bns.0.weight": {
+      "file": "bns_0_weight.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 256,
+      "max": 256
+    },
+    "bns.0.bias": {
+      "file": "bns_0_bias.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 0,
+      "max": 0
+    },
+    "bns.0.running_mean": {
+      "file": "bns_0_running_mean.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 0,
+      "max": 0
+    },
+    "bns.0.running_var": {
+      "file": "bns_0_running_var.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 256,
+      "max": 256
+    },
+    "bns.0.num_batches_tracked": {
+      "file": "bns_0_num_batches_tracked.mem",
+      "shape": [],
+      "num_values": 1,
+      "min": 0,
+      "max": 0
+    },
+    "bns.1.weight": {
+      "file": "bns_1_weight.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 256,
+      "max": 256
+    },
+    "bns.1.bias": {
+      "file": "bns_1_bias.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 0,
+      "max": 0
+    },
+    "bns.1.running_mean": {
+      "file": "bns_1_running_mean.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 0,
+      "max": 0
+    },
+    "bns.1.running_var": {
+      "file": "bns_1_running_var.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 256,
+      "max": 256
+    },
+    "bns.1.num_batches_tracked": {
+      "file": "bns_1_num_batches_tracked.mem",
+      "shape": [],
+      "num_values": 1,
+      "min": 0,
+      "max": 0
+    },
+    "bns.2.weight": {
+      "file": "bns_2_weight.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 256,
+      "max": 256
+    },
+    "bns.2.bias": {
+      "file": "bns_2_bias.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 0,
+      "max": 0
+    },
+    "bns.2.running_mean": {
+      "file": "bns_2_running_mean.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 0,
+      "max": 0
+    },
+    "bns.2.running_var": {
+      "file": "bns_2_running_var.mem",
+      "shape": [
+        64
+      ],
+      "num_values": 64,
+      "min": 256,
+      "max": 256
+    },
+    "bns.2.num_batches_tracked": {
+      "file": "bns_2_num_batches_tracked.mem",
+      "shape": [],
+      "num_values": 1,
+      "min": 0,
+      "max": 0
+    },
+    "readout_fc1.weight": {
+      "file": "readout_fc1_weight.mem",
+      "shape": [
+        128,
+        64
+      ],
+      "num_values": 8192,
+      "min": -32,
+      "max": 32
+    },
+    "readout_fc1.bias": {
+      "file": "readout_fc1_bias.mem",
+      "shape": [
+        128
+      ],
+      "num_values": 128,
+      "min": -32,
+      "max": 32
+    },
+    "readout_bn.weight": {
+      "file": "readout_bn_weight.mem",
+      "shape": [
+        128
+      ],
+      "num_values": 128,
+      "min": 256,
+      "max": 256
+    },
+    "readout_bn.bias": {
+      "file": "readout_bn_bias.mem",
+      "shape": [
+        128
+      ],
+      "num_values": 128,
+      "min": 0,
+      "max": 0
+    },
+    "readout_bn.running_mean": {
+      "file": "readout_bn_running_mean.mem",
+      "shape": [
+        128
+      ],
+      "num_values": 128,
+      "min": 0,
+      "max": 0
+    },
+    "readout_bn.running_var": {
+      "file": "readout_bn_running_var.mem",
+      "shape": [
+        128
+      ],
+      "num_values": 128,
+      "min": 256,
+      "max": 256
+    },
+    "readout_bn.num_batches_tracked": {
+      "file": "readout_bn_num_batches_tracked.mem",
+      "shape": [],
+      "num_values": 1,
+      "min": 0,
+      "max": 0
+    },
+    "readout_fc2.weight": {
+      "file": "readout_fc2_weight.mem",
+      "shape": [
+        12,
+        128
+      ],
+      "num_values": 1536,
+      "min": -23,
+      "max": 23
+    },
+    "readout_fc2.bias": {
+      "file": "readout_fc2_bias.mem",
+      "shape": [
+        12
+      ],
+      "num_values": 12,
+      "min": -16,
+      "max": 21
+    }
+  }
+}
